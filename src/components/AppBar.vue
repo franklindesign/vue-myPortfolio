@@ -1,23 +1,24 @@
 <template>
   <div>
-  <v-toolbar absolute dark>
-    <v-toolbar-title class="white--text"><router-link to="/" class="title">FRANKLIN DESIGN</router-link></v-toolbar-title>
-    <v-spacer></v-spacer>
-    <div class="navDrawer">
-    <v-btn icon @click="drawer = !drawer">
-      <v-icon>menu</v-icon>
-    </v-btn>
-    </div>
-  </v-toolbar>
- 
+    <v-toolbar absolute dark>
+      <v-toolbar-title class="white--text">
+        <router-link to="/" class="title">FRANKLIN DESIGN</router-link>
+      </v-toolbar-title>
+      <v-spacer></v-spacer>
+      <div class="hidden-sm-and-down">
+        <v-btn icon @click="drawer = !drawer">
+          <v-icon>menu</v-icon>
+        </v-btn>
+      </div>
+    </v-toolbar>
 
-  <v-navigation-drawer
+    <v-navigation-drawer
       v-model="drawer"
       right
-      absolute
       dark
+      app
       temporary
-      class="grey darken-4"
+      class="grey darken-4 hidden-sm-and-down"
     >
       <v-list class="pa-1">
         <v-list-tile avatar tag="div">
@@ -33,12 +34,7 @@
       <v-list>
         <v-divider light></v-divider>
 
-        <v-list-tile 
-          ripple
-          v-for="item in items"
-          :key="item.title"
-          :to="`${ item.link }`" 
-        >
+        <v-list-tile ripple v-for="item in items" :key="item.title" :to="`${ item.link }`">
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>
@@ -69,10 +65,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-@media screen and (max-width: 1024px) {
-  .navDrawer {
-    display: none;
-  }
-}
-</style>
