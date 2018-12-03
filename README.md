@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # portfolio-vue
 
 ## Project setup
@@ -27,3 +28,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue-myPortfolio
+Personal website (prototype)
+>>>>>>> 66418c21bdf0d499675599fbde956627701ddcbb
