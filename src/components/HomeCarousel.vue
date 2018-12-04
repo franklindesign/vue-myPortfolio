@@ -5,7 +5,7 @@
         <v-container fill-height>
           <v-layout class="header">
             <v-flex class="text">
-              <h3 class="display-3">{{item.featuredProject}}</h3>
+              <h3 class="display-2">{{item.featuredProject}}</h3>
               <span class="subheading">{{item.description}}</span>
               <v-divider class="my-3"></v-divider>
               <v-btn class="mx-0" color="primary" large :to="`${ item.link }`">View Project</v-btn>

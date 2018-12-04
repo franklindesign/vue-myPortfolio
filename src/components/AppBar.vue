@@ -56,8 +56,8 @@ export default {
       drawer: null,
       items: [
         { title: "Home", icon: "home", link: "/" },
-        { title: "Work", icon: "view_module", link: "/work" },
         { title: "About", icon: "person", link: "/about" },
+        { title: "Work", icon: "view_module", link: "/work" },
         { title: "Blog", icon: "message", link: "/blog" },
         { title: "Resources", icon: "local_library", link: "/resources" }
       ]

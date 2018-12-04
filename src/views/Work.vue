@@ -1,6 +1,9 @@
 <template>
-  <div class="work">
-    <h1 class="work">Work</h1>
+  <div>
+    <v-container class="mt-5">
+      <h1>Work</h1>
+      <h2>A selection of projects.</h2>
+    </v-container>
     <div class="project-container">
       <div
         class="mobile-item item"
@@ -52,10 +55,8 @@ export default {
 
 <style scoped>
 .work {
-  font-size: 1.5em;
   margin-top: 75px;
   margin-bottom: 25px;
-  text-align: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,25 +74,32 @@ export default {
 
   .project_title {
     width: 100%;
+    height: 25px;
     position: absolute;
+    font-weight: bold;
     bottom: 50px;
     color: white;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 25px;
   }
   .project_description {
     width: 100%;
+    height: 50px;
     position: absolute;
     bottom: 0px;
     color: white;
-    font-size: 0.7em;
+    font-size: 1em;
+    padding-top: 10px;
+    background-color: black;
   }
   .project {
-    background-color: black;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .work {
-    text-align: center;
     margin-top: 150px;
     margin-bottom: 100px;
     font-size: 2em;
@@ -100,16 +108,14 @@ export default {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: minmax(600px, auto);
-    background-color: black;
   }
 
   .item {
     position: relative;
-    opacity: 0.7;
+
     background-size: cover;
   }
   .item:hover {
-    opacity: 1;
     cursor: pointer;
   }
   .project_title {
@@ -117,13 +123,21 @@ export default {
     position: absolute;
     bottom: 50px;
     color: white;
+    font-size: 3em;
+    background-color: black;
   }
   .project_description {
     width: 100%;
     position: absolute;
     bottom: 0;
     color: white;
-    font-size: 0.7em;
+    font-size: 1.5em;
+    background-color: black;
+    height: 50px;
+  }
+  .project {
+    width: 100%;
+    text-align: center;
   }
 
   /* .item1 {

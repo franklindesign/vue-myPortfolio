@@ -6,7 +6,7 @@
     <p class="what">WHAT I DO</p>
     <p
       class="me"
-    >I help growing businesses increase revenue, expand brand awareness, and earn happier customers.</p>
+    >I help businesses by creating and increasing brand awareness and pushing products into users' hands.</p>
   </div>
 </template>
 
