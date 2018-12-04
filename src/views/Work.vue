@@ -1,8 +1,18 @@
 <template>
   <div class="work">
     <h1 class="work">Work</h1>
-    <div class="project-container"> 
-      <div class="mobile-item item" v-for="project in projects" :key="project.title" :style="{ backgroundImage: `url('${project.image}')` }">{{project.title}}</div>
+    <div class="project-container">
+      <div
+        class="mobile-item item"
+        v-for="project in projects"
+        :key="project.title"
+        :style="{ backgroundImage: `url('${project.image}')` }"
+      >
+        <div class="project">
+          <p class="project_title">{{project.title}}</p>
+          <p class="project_description">{{project.description}}</p>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -13,34 +23,25 @@ export default {
     return {
       projects: [
         {
-          title: "project1",
-          description: "description1",
-          image: "https://picsum.photos/600/600/?random"
+          title: "Hibiki Sushi",
+          description: "Santa Clarita's Local All-You-Can-Eat restaurant",
+          image: "../img/default.jpg",
+          color: "red"
         },
         {
-          title: "project2",
-          description: "description2",
-          image: "https://picsum.photos/600/600/?random"
+          title: "Build Your Creativity",
+          description: "Wendy's connectible Kid's Toy",
+          image: "../img/default.jpg"
         },
         {
-          title: "project3",
-          description: "description3",
-          image: "https://picsum.photos/600/600/?random"
+          title: "Bulma UI",
+          description: "Component UI made in Adobe XD",
+          image: "../img/default.jpg"
         },
         {
-          title: "project4",
-          description: "description4",
-          image: "https://picsum.photos/600/600/?random"
-        },
-        {
-          title: "project5",
-          description: "description5",
-          image: "https://picsum.photos/600/600/?random"
-        },
-        {
-          title: "project6",
-          description: "description6",
-          image: "https://picsum.photos/600/600/?random"
+          title: "Daily UI",
+          description: "Daily Challenges in User Interface",
+          image: "../img/default.jpg"
         }
       ]
     };
@@ -59,13 +60,32 @@ export default {
 
 @media screen and (max-width: 768px) {
   .mobile-item {
-    width: 100vw;
+    width: 100%;
     height: 400px;
-    background-color: aquamarine;
   }
+  .item {
+    position: relative;
+  }
+
   .project-container {
     display: grid;
-    grid-auto-rows: minmax(300px, auto);
+  }
+
+  .project_title {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    color: white;
+  }
+  .project_description {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 0.7em;
+  }
+  .project {
+    background-color: black;
   }
 }
 
@@ -84,13 +104,28 @@ export default {
   }
 
   .item {
-    opacity: 1;
+    position: relative;
+    opacity: 0.7;
     background-size: cover;
   }
   .item:hover {
-    opacity: 0.7;
+    opacity: 1;
     cursor: pointer;
   }
+  .project_title {
+    width: 100%;
+    position: absolute;
+    bottom: 50px;
+    color: white;
+  }
+  .project_description {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 0.7em;
+  }
+
   /* .item1 {
     grid-column: 1 / 2;
     grid-row: 1;

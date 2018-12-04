@@ -1,10 +1,6 @@
 <template>
-  <v-carousel height="100vh" hide-delimiters>
-    <v-carousel-item
-      v-for="(item,i) in items"
-      :key="i"
-      :src="item.src"
-    >
+  <v-carousel height="100vh">
+    <v-carousel-item v-for="(item,i) in items" :key="i" :src="item.src">
       <v-responsive height="80vh">
         <v-container fill-height>
           <v-layout class="header">
@@ -12,19 +8,12 @@
               <h3 class="display-3">{{item.featuredProject}}</h3>
               <span class="subheading">{{item.description}}</span>
               <v-divider class="my-3"></v-divider>
-              <v-btn
-                class="mx-0"
-                color="primary"
-                large
-                :to="`${ item.link }`"
-              >
-                View Project
-              </v-btn>
+              <v-btn class="mx-0" color="primary" large :to="`${ item.link }`">View Project</v-btn>
             </v-flex>
           </v-layout>
         </v-container>
       </v-responsive>
-     </v-carousel-item>
+    </v-carousel-item>
   </v-carousel>
 </template>
 
@@ -35,27 +24,27 @@ export default {
     return {
       items: [
         {
-          featuredProject: "title1",
+          featuredProject: "Hibiki Sushi & Bar",
           src: "https://source.unsplash.com/random/1400x800",
-          description: "desc1",
-          link: "/work"
+          description: "Santa Clarita's Local All-You-Can-Eat restaurant",
+          link: "/hibikisushi"
         },
         {
-          featuredProject: "title2",
+          featuredProject: "Build Your Creativity",
           src: "https://source.unsplash.com/random/1400x800",
-          description: "desc2",
+          description: "Wendy's connectible Kid's Toy",
           link: "/about"
         },
         {
-          featuredProject: "title3",
+          featuredProject: "Bulma UI",
           src: "https://source.unsplash.com/random/1200x800",
-          description: "desc3",
+          description: "Component UI made in Adobe XD",
           link: "/blog"
         },
         {
-          featuredProject: "title4",
+          featuredProject: "Daily UI",
           src: "https://source.unsplash.com/random/1200x800",
-          description: "desc4",
+          description: "Daily Challenges in User Interface",
           link: "/resources"
         }
       ]

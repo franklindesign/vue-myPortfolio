@@ -28,7 +28,7 @@ export default new Router({
       component: () => import("./views/Work.vue")
     },
     {
-      path: "/project",
+      path: "/hibikisushi",
       name: "hibikisushi",
       component: () => import("./projects/Hibikisushi.vue")
     },

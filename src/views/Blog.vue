@@ -1,6 +1,7 @@
 <template>
-  <div class="blog">
-    <h1 class="display-4">/blog</h1>
-     
-  </div>
+  <v-container class="mt-5">
+    <h1>Blog</h1>
+
+    <p>Coming Soon</p>
+  </v-container>
 </template>

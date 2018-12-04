@@ -1,11 +1,13 @@
 <template>
-  <div id="app">
+  <v-app>
     <div id="nav">
       <AppBar></AppBar>
     </div>
-    <router-view/>
-    <BottomNav />
-  </div>
+    <v-content id="app">
+      <router-view/>
+    </v-content>
+    <BottomNav/>
+  </v-app>
 </template>
 
 <script>
