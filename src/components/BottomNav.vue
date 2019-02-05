@@ -1,6 +1,6 @@
 <template>
   <v-card flat class="hidden-md-and-up">
-    <v-bottom-nav :value="true" fixed color="grey darken-4">
+    <v-bottom-nav :value="true" fixed dark color="grey darken-4">
       <router-link to="/">
         <v-btn color="white" flat>
           <span>Home</span>

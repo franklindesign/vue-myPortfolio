@@ -2,9 +2,10 @@
   <div class="home">
     <HomeCarousel></HomeCarousel>
     <section>
-      <p class="about">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vitae earum doloremque quis, esse voluptatum ab illo ipsa pariatur quidem, ex libero in natus error est tempora officia voluptatem neque?
-      </p>
-      
+      <p
+        class="about aboutText"
+      >I'm Franklin, your design partner based in Los Angeles. Helping companies develop consumer products and user friendly websites/apps. I've worked alongside small businesses and entrepreneurs.</p>
+      <p class="about">Available for work, email me at manghi@gmail.com</p>
     </section>
   </div>
 </template>
@@ -23,7 +24,17 @@ export default {
 
 <style scoped>
 .about {
-  font-size: 1.5em;
-  margin: 2em;
+  text-align: center;
+  margin: 1em;
+}
+.aboutText {
+  font-size: 1.6em;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    margin: 3em auto;
+    width: 800px;
+  }
 }
 </style>

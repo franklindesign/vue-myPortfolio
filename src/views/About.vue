@@ -6,13 +6,14 @@
     <p class="what">WHAT I DO</p>
     <p
       class="me"
-    >I help businesses by creating and increasing brand awareness and pushing products into users' hands.</p>
+    >Helping businesses with creating, increasing brand awareness, and pushing products into users' hands.</p>
   </div>
 </template>
 
 <style scoped>
+/* mobile styles */
 .what {
-  padding: 5px;
+  padding: 15px;
   color: white;
   background-color: black;
   width: 100px;
@@ -26,17 +27,22 @@
   margin-top: 80px;
 }
 .me {
-  font-size: 2em;
+  font-size: 1.5em;
   line-height: 1.25em;
 }
 
+/* desktop styles */
 @media screen and (min-width: 768px) {
   .me {
-    font-size: 5em;
+    font-size: 1.5em;
   }
   .what {
     font-size: 1em;
     padding: 10px;
+  }
+  .about {
+    margin-left: 150px;
+    margin-right: 150px;
   }
 }
 </style>

@@ -11,9 +11,9 @@
         :key="project.title"
         :style="{ backgroundImage: `url('${project.image}')` }"
       >
-        <div class="project">
-          <p class="project_title">{{project.title}}</p>
-          <p class="project_description">{{project.description}}</p>
+        <div class="hover">
+          <p class="project project_title">{{ project.title }}</p>
+          <p class="project project_description">{{ project.description }}</p>
         </div>
       </div>
     </div>
@@ -26,25 +26,24 @@ export default {
     return {
       projects: [
         {
-          title: "Hibiki Sushi",
-          description: "Santa Clarita's Local All-You-Can-Eat restaurant",
-          image: "../img/default.jpg",
-          color: "red"
+          title: "Build Your Creativity",
+          description: "Wendy's Connectible Kid's Toy",
+          image: "../img/work/BYC/work_byc_small.jpg"
         },
         {
-          title: "Build Your Creativity",
-          description: "Wendy's connectible Kid's Toy",
-          image: "../img/default.jpg"
+          title: "Hibiki Sushi",
+          description: "Santa Clarita's All You Can Eat Restaurant",
+          image: "../img/work/BYC/work_byc_small.jpg"
         },
         {
           title: "Bulma UI",
           description: "Component UI made in Adobe XD",
-          image: "../img/default.jpg"
+          image: "../img/work/BYC/work_byc_small.jpg"
         },
         {
           title: "Daily UI",
           description: "Daily Challenges in User Interface",
-          image: "../img/default.jpg"
+          image: "../img/work/BYC/work_byc_small.jpg"
         }
       ]
     };
@@ -52,20 +51,24 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .work {
   margin-top: 75px;
   margin-bottom: 25px;
 }
+.mobile-item {
+  height: 100%;
+}
 
 @media screen and (max-width: 768px) {
   .mobile-item {
     width: 100%;
-    height: 400px;
+    height: 350px;
   }
   .item {
     position: relative;
+    background-position: center center;
+    background-size: cover;
   }
 
   .project-container {
@@ -77,7 +80,7 @@ export default {
     height: 25px;
     position: absolute;
     font-weight: bold;
-    bottom: 50px;
+    bottom: 35px;
     color: white;
     background-color: black;
     padding-top: 10px;
@@ -87,7 +90,7 @@ export default {
     width: 100%;
     height: 50px;
     position: absolute;
-    bottom: 0px;
+    bottom: -15px;
     color: white;
     font-size: 1em;
     padding-top: 10px;
@@ -97,12 +100,22 @@ export default {
     text-align: center;
   }
 }
-
+/* desktop styles */
 @media screen and (min-width: 768px) {
+  .hover {
+    opacity: 0;
+  }
+  .hover:hover {
+    opacity: 1;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+  }
   .work {
     margin-top: 150px;
     margin-bottom: 100px;
-    font-size: 2em;
+    font-size: 1em;
   }
   .project-container {
     display: grid;
@@ -112,7 +125,8 @@ export default {
 
   .item {
     position: relative;
-
+    height: 100%;
+    background-position: center center;
     background-size: cover;
   }
   .item:hover {
@@ -121,18 +135,16 @@ export default {
   .project_title {
     width: 100%;
     position: absolute;
-    bottom: 50px;
+    bottom: 50%;
     color: white;
-    font-size: 3em;
-    background-color: black;
+    font-weight: bold;
   }
   .project_description {
     width: 100%;
     position: absolute;
-    bottom: 0;
+    bottom: 42%;
     color: white;
     font-size: 1.5em;
-    background-color: black;
     height: 50px;
   }
   .project {
