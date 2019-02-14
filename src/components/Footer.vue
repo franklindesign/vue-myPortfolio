@@ -40,11 +40,7 @@ export default {
         icon: "fab fa-dribbble",
         link: "http://www.dribbble.com/franklinm"
       },
-      {
-        title: "Instagram",
-        icon: "fab fa-instagram",
-        link: "http://www.instagram.com/franklindesign"
-      },
+
       {
         title: "Behance",
         icon: "fab fa-behance",
@@ -55,11 +51,7 @@ export default {
         icon: "fab fa-github",
         link: "http://www.github.com/franklindesign"
       },
-      {
-        title: "Codepen",
-        icon: "fab fa-codepen",
-        link: "https://codepen.io/Franklinm"
-      },
+
       {
         title: "LinkedIn",
         icon: "fab fa-linkedin",

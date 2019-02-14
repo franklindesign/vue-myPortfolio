@@ -1,9 +1,8 @@
 <template>
   <div class="grid-container">
-    <div class="grid-item-1 mb-5">
-      <strong>Franklin Manghi
-        <br>manghi@gmail.com
-        <br>Graphic/Web Designer
+    <div class="grid-item-1 mb-2">
+      <strong
+        >Franklin Manghi <br />manghi@gmail.com <br />Graphic/Web Designer
       </strong>
     </div>
 
@@ -13,9 +12,11 @@
     </div>
 
     <div class="grid-item-6">
-      <p>
+      <p class="column-spacing">
         <strong>
-          <a href="http://www.hibikisushi.net" target="_blank">Hibiki Sushi Inc.</a>
+          <a href="http://www.hibikisushi.net" target="_blank"
+            >Hibiki Sushi Inc.</a
+          >
         </strong>
       </p>
       <p>
@@ -26,11 +27,11 @@
         developed website, drive local awareness and engagement through social
         media and published monthly ad for local magazines.
       </p>
-      <hr>
+      <hr />
     </div>
 
     <div class="grid-item-8">
-      <p>
+      <p class="column-spacing">
         <strong>
           <a href="http://strottman.com/" target="_blank">STROTTMAN</a>
         </strong>
@@ -42,11 +43,11 @@
         Worked directly with an art director and senior designer on various
         projects for Wendy's.
       </p>
-      <hr>
+      <hr />
     </div>
 
     <div class="grid-item-10">
-      <p>
+      <p class="column-spacing">
         <strong>NU Whole Superfood</strong>
       </p>
       <p>
@@ -56,11 +57,11 @@
         Developed product label from prototype to final design, created
         marketing materials for all media campaigns.
       </p>
-      <hr>
+      <hr />
     </div>
 
     <div class="grid-item-12">
-      <p>
+      <p class="column-spacing">
         <strong>Feve's Manicure</strong>
       </p>
       <p>
@@ -77,7 +78,7 @@
         including logos, marketing collateral, posters, illustrations, magazine
         ads, product labels and tshirt designs.
       </p>
-      <hr>
+      <hr />
     </div>
     <div class="grid-item-space"></div>
     <div class="row-title row-bottom-spacing">
@@ -90,11 +91,9 @@
       </p>
       <p>
         <strong>
-          <a
-            href="http://www.csun.edu"
-            target="_blank"
-            class="csun"
-          >California State University, Northridge</a>
+          <a href="http://www.csun.edu" target="_blank" class="csun"
+            >California State University, Northridge</a
+          >
         </strong>
       </p>
     </div>
@@ -109,7 +108,8 @@
           <a
             href="https://www.freecodecamp.org/certification/franklindesign/responsive-web-design"
             target="_blank"
-          >(See Certifcation)</a>
+            >(See Certifcation)</a
+          >
         </i>
       </p>
       <p class="fcc">freeCodeCamp</p>
@@ -121,7 +121,8 @@
           <a
             href="https://www.udemy.com/certificate/UC-5Q7CO770/"
             target="_blank"
-          >(See Certification)</a>
+            >(See Certification)</a
+          >
         </i>
       </p>
       <p class="fcc">Udemy</p>
@@ -133,7 +134,8 @@
           <a
             href="https://www.udemy.com/certificate/UC-8D07XGHA/"
             target="_blank"
-          >(See Certifcation)</a>
+            >(See Certifcation)</a
+          >
         </i>
       </p>
       <p class="fcc">Udemy</p>
@@ -145,7 +147,8 @@
           <a
             href="https://www.udemy.com/certificate/UC-FTZVOXVD/"
             target="_blank"
-          >(See Certifcation)</a>
+            >(See Certifcation)</a
+          >
         </i>
       </p>
       <p class="fcc">Udemy</p>
@@ -164,11 +167,7 @@
 
     <div>
       <div class="cert column-spacing">
-        <span v-for="tool in tools" :key="tool">
-          {{
-          tool + ", "
-          }}
-        </span>
+        <span v-for="tool in tools" :key="tool">{{ tool + ", " }}</span>
       </div>
     </div>
 
@@ -177,7 +176,9 @@
       <strong>INTERESTS</strong>
     </div>
     <div class="cert column-spacing">
-      <span v-for="interest in interests" :key="interest">{{ interest + ", " }}</span>
+      <span v-for="interest in interests" :key="interest">
+        {{ interest + ", " }}
+      </span>
     </div>
   </div>
 </template>
@@ -216,11 +217,7 @@ export default {
         "UXPin",
         "SketchApp"
       ],
-      interests: [
-        "Sports (NBA, NFL, MLB),",
-        "Video Games,",
-        "Fitness: Weight Lifting"
-      ]
+      interests: ["NBA", "Weight Lifting", "Video Games"]
     };
   }
 };

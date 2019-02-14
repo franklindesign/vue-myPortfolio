@@ -4,15 +4,18 @@
       <div class="me">
         Franklin Manghi is a graphic & web designer living in Los Angeles.
         Currently working as a freelancer, designing user interface, creating
-        product packaging, developing websites and campaigns for small businesses.
+        product packaging, developing websites and campaigns for small
+        businesses.
       </div>
 
       <p class="me">
-        Helping businesses with creating, increasing brand awareness, and pushing
-        products into users' hands.
+        Helping businesses with creating, increasing brand awareness, and
+        pushing products into users' hands.
       </p>
       <div class="mt-3">
-        <button class="viewResume" @click="viewResume = !viewResume">View Resume</button>
+        <button class="viewResume" @click="viewResume = !viewResume">
+          View Resume
+        </button>
         <div v-show="viewResume" class="centerResume">
           <Resume></Resume>
         </div>
