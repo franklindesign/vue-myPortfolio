@@ -1,23 +1,24 @@
 <template>
   <div class="home">
-    <HomeCarousel></HomeCarousel>
-    <section>
-      <p
-        class="about aboutText"
-      >I'm Franklin, your design partner based in Los Angeles. Helping companies develop consumer products and user friendly websites/apps. I've worked alongside small businesses and entrepreneurs.</p>
+    <v-container class="mt-5">
+      <p class="about aboutText">
+        I'm Franklin, your design partner based in Los Angeles. Helping
+        companies develop consumer products and user friendly websites/apps.
+        I've worked alongside small businesses and entrepreneurs.
+      </p>
       <p class="about">Available for work, email me at manghi@gmail.com</p>
-    </section>
+    </v-container>
+    <Projects></Projects>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HomeCarousel from "@/components/HomeCarousel.vue";
-
+import Projects from "@/components/Projects.vue";
 export default {
-  name: "home",
+  name: "Home",
   components: {
-    HomeCarousel
+    Projects
   }
 };
 </script>

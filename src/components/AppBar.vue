@@ -23,7 +23,7 @@
       <v-list class="pa-1">
         <v-list-tile avatar tag="div">
           <v-list-tile-avatar>
-            <img src="https://avatars1.githubusercontent.com/u/6743753?s=100">
+            <img src="https://avatars1.githubusercontent.com/u/6743753?s=100" />
           </v-list-tile-avatar>
           <v-list-tile-content>
             <v-list-tile-title>Franklin Manghi</v-list-tile-title>
@@ -34,7 +34,12 @@
       <v-list>
         <v-divider light></v-divider>
 
-        <v-list-tile ripple v-for="item in items" :key="item.title" :to="`${ item.link }`">
+        <v-list-tile
+          ripple
+          v-for="item in items"
+          :key="item.title"
+          :to="`${item.link}`"
+        >
           <v-list-tile-action>
             <v-icon>{{ item.icon }}</v-icon>
           </v-list-tile-action>

@@ -3,7 +3,14 @@
     <v-card class="flex" flat>
       <v-card-title class="blue justify-center">
         <div>
-          <v-btn v-for="item in items" :key="item" class="mx-3" icon>
+          <v-btn
+            v-for="(item, i) in items"
+            :key="i"
+            class="mx-3"
+            icon
+            :href="`${item.link}`"
+            target="_blank"
+          >
             <v-icon medium dark>{{ item.icon }}</v-icon>
           </v-btn>
         </div>
@@ -24,29 +31,39 @@ export default {
   data: () => ({
     items: [
       {
+        title: "Twitter",
+        icon: "fab fa-twitter",
+        link: "http://www.twitter.com/franklinsans"
+      },
+      {
         title: "Dribbble",
         icon: "fab fa-dribbble",
-        link: "http://www.dribbble.com"
+        link: "http://www.dribbble.com/franklinm"
       },
       {
         title: "Instagram",
         icon: "fab fa-instagram",
-        link: "http://www.instagram.com"
+        link: "http://www.instagram.com/franklindesign"
       },
       {
         title: "Behance",
         icon: "fab fa-behance",
-        link: "http://www.behance.net"
+        link: "http://www.behance.net/fm11"
+      },
+      {
+        title: "Github",
+        icon: "fab fa-github",
+        link: "http://www.github.com/franklindesign"
+      },
+      {
+        title: "Codepen",
+        icon: "fab fa-codepen",
+        link: "https://codepen.io/Franklinm"
       },
       {
         title: "LinkedIn",
         icon: "fab fa-linkedin",
-        link: "http://www.linkedin.com"
-      },
-      {
-        title: "Facebook",
-        icon: "fab fa-facebook",
-        link: "http://www.facebook.com"
+        link: "http://www.linkedin.com/in/franklinmanghi"
       }
     ]
   })
@@ -58,4 +75,3 @@ export default {
   padding-bottom: 3em;
 }
 </style>
-

@@ -1,7 +1,8 @@
 #app {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Open Sans", "Helvetica Neue", sans-serif;
-  background-color: white;
+  background-color: rgb(19, 19, 19);
+  color: white;
 }
 
 a:link {

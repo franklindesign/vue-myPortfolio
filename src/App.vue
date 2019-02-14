@@ -4,10 +4,10 @@
       <AppBar></AppBar>
     </div>
     <v-content id="app">
-      <router-view/>
+      <router-view />
     </v-content>
-    <Footer/>
-    <BottomNav/>
+    <Footer />
+    <BottomNav />
   </v-app>
 </template>
 
