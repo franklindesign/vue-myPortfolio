@@ -1,6 +1,6 @@
 import Vue from "vue";
 import App from "./App.vue";
-import HomeCarousel from "./components/HomeCarousel.vue";
+// import HomeCarousel from "./components/HomeCarousel.vue";
 import AppBar from "./components/AppBar.vue";
 import BottomNav from "./components/BottomNav.vue";
 import router from "./router";
@@ -11,7 +11,7 @@ import "./app.css";
 
 Vue.use(Vuetify);
 
-Vue.component("homecarousel", HomeCarousel);
+// Vue.component("homecarousel", HomeCarousel);
 Vue.component("appbar", AppBar);
 Vue.component("bottomnav", BottomNav);
 
