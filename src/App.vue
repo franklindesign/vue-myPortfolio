@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <div id="nav">
-      <AppBar></AppBar>
-    </div>
     <v-content id="app">
+      <div id="nav">
+        <ToolBar></ToolBar>
+      </div>
       <router-view />
     </v-content>
     <Footer />
@@ -13,13 +13,13 @@
 
 <script>
 // @ is an alias to /src
-import AppBar from "@/components/AppBar.vue";
+import ToolBar from "@/components/ToolBar.vue";
 import Footer from "@/components/Footer.vue";
 import BottomNav from "@/components/BottomNav.vue";
 export default {
   name: "App",
   components: {
-    AppBar,
+    ToolBar,
     Footer,
     BottomNav
   }

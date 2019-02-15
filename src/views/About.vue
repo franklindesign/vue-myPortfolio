@@ -1,17 +1,13 @@
 <template>
-  <v-container class="mt-5">
-    <div class="about mt-5">
+  <v-container class="mt-5 topSpacing">
+    <div>
+      <h1>About</h1>
       <div class="me">
-        Franklin Manghi is a graphic & web designer living in Los Angeles.
-        Currently working as a freelancer, designing user interface, creating
-        product packaging, developing websites and campaigns for small
-        businesses.
+        I'm Franklin, your design partner based in Los Angeles. Helping
+        companies develop consumer products and user friendly websites/apps.
+        I've worked alongside small businesses and entrepreneurs.
       </div>
 
-      <p class="me">
-        Helping businesses with creating, increasing brand awareness, and
-        pushing products into users' hands.
-      </p>
       <div class="mt-3">
         <button class="viewResume" @click="viewResume = !viewResume">
           View Resume
@@ -40,6 +36,9 @@ export default {
 </script>
 
 <style scoped>
+.topSpacing {
+  padding-top: 50px;
+}
 .viewResume {
   color: black;
   width: 150px;

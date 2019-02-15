@@ -1,7 +1,7 @@
 import Vue from "vue";
 import App from "./App.vue";
 // import HomeCarousel from "./components/HomeCarousel.vue";
-import AppBar from "./components/AppBar.vue";
+import ToolBar from "./components/ToolBar.vue";
 import BottomNav from "./components/BottomNav.vue";
 import router from "./router";
 import "./registerServiceWorker";
@@ -12,7 +12,7 @@ import "./app.css";
 Vue.use(Vuetify);
 
 // Vue.component("homecarousel", HomeCarousel);
-Vue.component("appbar", AppBar);
+Vue.component("toolbar", ToolBar);
 Vue.component("bottomnav", BottomNav);
 
 Vue.config.productionTip = false;

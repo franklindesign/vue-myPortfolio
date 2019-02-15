@@ -44,7 +44,7 @@ export default {
       {
         title: "Behance",
         icon: "fab fa-behance",
-        link: "http://www.behance.net/fm11"
+        link: "http://www.behance.net/franklinmanghi"
       },
       {
         title: "Github",

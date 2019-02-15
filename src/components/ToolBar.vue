@@ -1,12 +1,17 @@
 <template>
   <div>
-    <v-toolbar absolute dark height="66">
+    <v-toolbar dark flat class="toolbar-transparent" fixed height="75">
       <v-toolbar-title class="white--text">
         <router-link to="/" class="title">FRANKLIN DESIGN</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
-        <v-btn v-for="item in items" :key="item.title" :to="`${item.link}`">
+        <v-btn
+          flat
+          v-for="item in items"
+          :key="item.title"
+          :to="`${item.link}`"
+        >
           <v-icon>{{ item.icon }}</v-icon>
           <p class="ma-2">{{ item.title }}</p>
         </v-btn>
@@ -53,13 +58,18 @@
     </v-navigation-drawer>-->
   </div>
 </template>
+<style scoped>
+.toolbar-transparent {
+  background-color: rgba(0, 0, 0, 0.6) !important;
+}
+</style>
 
 <script>
 export default {
-  name: "AppBar",
+  name: "ToolBar",
   data() {
     return {
-      drawer: null,
+      // drawer: null,
       items: [
         { title: "Work", icon: "view_module", link: "/work" },
         { title: "About", icon: "person", link: "/about" },

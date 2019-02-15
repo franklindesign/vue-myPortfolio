@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-container class="mt-5">
+    <v-container class="mt-5 topSpacing">
       <h1>Work</h1>
 
       <p>Selection of Projects</p>
@@ -19,4 +19,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.topSpacing {
+  padding-top: 50px;
+}
+</style>
