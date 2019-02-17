@@ -2,11 +2,14 @@
   <div>
     <div class="projects-container">
       <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
-        <img :src="`${project.image}`">
-        <div class="hover">
-          <p class="project project_title">{{ project.title }}</p>
-          <p class="project project_description">{{ project.description }}</p>
-        </div>
+        <router-link :to="`${project.link}`">
+          <img :src="`${project.image}`">
+
+          <div class="hover">
+            <p class="project project_title">{{ project.title }}</p>
+            <p class="project project_description">{{ project.description }}</p>
+          </div>
+        </router-link>
       </div>
     </div>
   </div>
@@ -20,22 +23,26 @@ export default {
         {
           title: "Build Your Creativity",
           description: "Wendy's Connectible Kid's Toy",
-          image: "../img/work/BYC/work_byc_small.jpg"
+          image: "../img/work/BYC/work_byc_small.jpg",
+          link: "/byc"
         },
         {
           title: "Hibiki Sushi",
           description: "Santa Clarita's All You Can Eat Restaurant",
-          image: "../img/work/HIBIKI/work_hibiki_small.jpg"
+          image: "../img/work/HIBIKI/work_hibiki_small.jpg",
+          link: ""
         },
         {
           title: "TANGERINES",
           description: "Orange County Field Hockey Club",
-          image: "../img/work/OCFHC/work_ocfhc_small.jpg"
+          image: "../img/work/OCFHC/work_ocfhc_small.jpg",
+          link: ""
         },
         {
           title: "NU Superfood",
           description: "Nu Whey Protein",
-          image: "../img/work/NU/work_nu_small.jpg"
+          image: "../img/work/NU/work_nu_small.jpg",
+          link: "/nu"
         }
       ]
     };

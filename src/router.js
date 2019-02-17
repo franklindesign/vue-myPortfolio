@@ -39,6 +39,11 @@ export default new Router({
       name: "nu",
       component: () => import("./projects/Nu.vue")
     },
+    {
+      path: "/tangerines",
+      name: "tangerines",
+      component: () => import("./projects/Tangerines.vue")
+    },
     // {
     //   path: "/blog",
     //   name: "blog",
@@ -49,5 +54,9 @@ export default new Router({
       name: "resources",
       component: () => import("./views/Resources.vue")
     }
-  ]
+  ],
+  // Scroll to Top on Navigation
+  scrollBehavior(to, from, savedPosition) {
+    return { x: 0, y: 0 };
+  }
 });

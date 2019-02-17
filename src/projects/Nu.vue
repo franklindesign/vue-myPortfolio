@@ -4,18 +4,9 @@
 
     <div class="description">
       <h1 class="mb-3">{{projectName}}</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident,
-        tempora. Totam suscipit quibusdam animi impedit. Facilis dolore ad unde
-        reprehenderit voluptas, quisquam nisi, consequuntur ratione facere,
-        cumque possimus laboriosam accusantium! Lorem ipsum dolor, sit amet
-        consectetur adipisicing elit. Atque praesentium, repellendus eligendi
-        odio enim, voluptate ab earum quod quae excepturi incidunt, non illum
-        ratione dignissimos ea ad recusandae tempore harum. Lorem ipsum dolor
-        sit, amet consectetur adipisicing elit. Vitae, magnam magni consectetur
-        id provident cupiditate odit numquam itaque eius alias possimus vel
-        exercitationem? Libero illo suscipit quas labore tenetur enim?
-      </p>
+      <p
+        class="projectDetail"
+      >Nu Whey Protein is a unique health nutrition company founded by Lenyn V. Nunez, fitness coach, author and former Mr. California (Bodybuilding Competition, 2011). Lenyn wanted to build a brand that supports his day to day lifestyle and passion in health and nutrition. I was approached to conceptualize a label packaging and direct his vision, a "Nu-Way" of life that eventually consisted of a healthy and vegan-friendly whey protein supplement. After numerous rounds of constant communication with his team, we came up with a solution that visually communicate a high-end quality product for casual gym-goers, vegans, and fit individuals.</p>
 
       <div class="services mt-5">
         <h3>Services:</h3>
@@ -24,7 +15,8 @@
         </ul>
       </div>
     </div>
-    <v-img contain src="https://source.unsplash.com/1600x900/?fit"></v-img>
+    <v-img contain src="/img/work/NU/work_nu_logo_1600x600.png"></v-img>
+    <v-img contain src="/img/work/NU/work_nu_label_large_1600x800.jpg"></v-img>
   </div>
 </template>
 
@@ -33,19 +25,27 @@ export default {
   data() {
     return {
       projectName: "Nu Whey Protein",
-      services: [{ service: "Packaging" }, { service: "Branding" }]
+      services: [
+        { service: "Identity Design" },
+        { service: "Packaging" },
+        { service: "Art Direction" }
+      ]
+      // images: [{ hero: "../img/work/NU/work_nu_large_1600x600"}, {image: ""}]
     };
   }
 };
 </script>
 
 <style scoped>
+.projectDetail {
+  font-size: 1.25em;
+}
 .nu {
   z-index: 2;
 }
 .projectImage {
-  background-image: url("https://source.unsplash.com/1600x600/?fitness");
-  height: 550px;
+  background-image: url("/img/work/NU/work_nu_large_1600x600.jpg");
+  height: 600px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -54,7 +54,8 @@ export default {
 .description {
   margin: 25px;
   padding: 5px;
-  width: 75vw;
+  width: 80vw;
+  line-height: 2.5em;
 }
 
 li {

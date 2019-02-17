@@ -29,13 +29,16 @@ export default {
   margin: 1em;
 }
 .aboutText {
-  font-size: 1.6em;
+  font-size: 1.2em;
 }
 
 @media screen and (min-width: 768px) {
   .about {
     margin: 3em auto;
-    width: 800px;
+    width: 75vw;
+  }
+  .aboutText {
+    font-size: 2em;
   }
 }
 </style>
