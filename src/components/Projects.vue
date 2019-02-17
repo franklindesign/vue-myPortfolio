@@ -1,12 +1,8 @@
 <template>
   <div>
-    <div class="project-container">
-      <div
-        class="mobile-item item"
-        v-for="project in projects"
-        :key="project.title"
-        :style="{ backgroundImage: `url('${project.image}')` }"
-      >
+    <div class="projects-container">
+      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
+        <img :src="`${project.image}`">
         <div class="hover">
           <p class="project project_title">{{ project.title }}</p>
           <p class="project project_description">{{ project.description }}</p>
@@ -48,49 +44,40 @@ export default {
 </script>
 
 <style scoped>
-.work {
-  margin-top: 75px;
-  margin-bottom: 25px;
-}
-.mobile-item {
-  height: 100%;
-}
-
+/* mobile styles */
 @media screen and (max-width: 768px) {
   .mobile-item {
-    width: 100%;
     height: 350px;
   }
-  .item {
+  .item-container,
+  img {
     position: relative;
-    background-position: center center;
-    background-size: cover;
+    width: 100vw;
+    background-position: center;
   }
 
-  .project-container {
+  .projects-container {
     display: grid;
   }
 
   .project_title {
     width: 100%;
-    height: 25px;
     position: absolute;
     font-weight: bold;
-    bottom: 34px;
+    bottom: 10%;
     color: white;
-    background-color: rgba(0, 0, 0, 0.9);
-    padding-top: 10px;
-    padding-bottom: 25px;
+    background-color: black;
+    padding: 10px;
   }
   .project_description {
     width: 100%;
-    height: 50px;
+
     position: absolute;
-    bottom: -16px;
+    bottom: 0;
     color: white;
     font-size: 1em;
-    padding-top: 10px;
-    background-color: rgba(0, 0, 0, 0.9);
+    padding: 10px;
+    background-color: black;
   }
   .project {
     text-align: center;
@@ -107,38 +94,52 @@ export default {
     background-color: rgba(0, 0, 0, 0.8);
     width: 100%;
     height: 100%;
+    cursor: pointer;
   }
   .work {
     margin-top: 150px;
     margin-bottom: 100px;
     font-size: 1em;
   }
-  .project-container {
+  .projects-container {
+    overflow: hidden;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: minmax(600px, auto);
+    grid-auto-rows: minmax(20%, 35vmax);
+    position: relative;
+  }
+  .projects-container > div {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
   }
 
-  .item {
-    position: relative;
-    height: 100%;
-    background-position: center center;
-    background-size: cover;
+  .projects-container img {
+    opacity: 1;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: all 0.5s ease-in-out;
+    width: 100%;
+    display: block;
+    position: absolute;
   }
-  .item:hover {
-    cursor: pointer;
+
+  .projects-container div:hover img {
+    opacity: 0.8;
+    transform: scale(1.1);
   }
+
   .project_title {
     width: 100%;
     position: absolute;
-    bottom: 50%;
+    top: 40%;
     color: white;
     font-weight: bold;
   }
   .project_description {
     width: 100%;
     position: absolute;
-    bottom: 42%;
+    top: 45%;
     color: white;
     font-size: 1.5em;
     height: 50px;
@@ -147,26 +148,5 @@ export default {
     width: 100%;
     text-align: center;
   }
-
-  /* .item1 {
-    grid-column: 1 / 2;
-    grid-row: 1;
-    background-color: aquamarine;
-  }
-  .item2 {
-    grid-column: 2 / 2;
-    grid-row: 1;
-    background-color: blueviolet;
-  }
-  .item3 {
-    grid-column: 2 / 1;
-    grid-row: 2;
-    background-color: burlywood;
-  }
-  .item4 {
-    grid-column: 2 / 2;
-    grid-row: 2;
-    background-color: red;
-  } */
 }
 </style>

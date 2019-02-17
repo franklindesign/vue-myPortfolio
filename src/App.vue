@@ -4,10 +4,10 @@
       <div id="nav">
         <ToolBar></ToolBar>
       </div>
-      <router-view />
+      <router-view/>
     </v-content>
-    <Footer />
-    <BottomNav />
+    <Footer/>
+    <BottomNav/>
   </v-app>
 </template>
 
@@ -18,6 +18,10 @@ import Footer from "@/components/Footer.vue";
 import BottomNav from "@/components/BottomNav.vue";
 export default {
   name: "App",
+  metaInfo: {
+    title: "Design by Franklin",
+    titleTemplate: "%s ← Franklin's Website"
+  },
   components: {
     ToolBar,
     Footer,
