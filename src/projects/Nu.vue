@@ -45,8 +45,7 @@ export default {
 }
 .projectImage {
   background-image: url("/img/work/NU/work_nu_large_1600x600.jpg");
-  height: 600px;
-  background-attachment: fixed;
+  height: 400px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -65,7 +64,17 @@ li {
 ul {
   padding: 0;
 }
+/* desktop styles */
 @media screen and (min-width: 768px) {
+  .projectImage {
+    max-width: 100%;
+    height: 600px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   .description {
     margin-left: 20%;
     width: 50vw;
