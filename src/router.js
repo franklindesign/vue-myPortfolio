@@ -56,7 +56,7 @@ export default new Router({
     }
   ],
   // Scroll to Top on Navigation
-  scrollBehavior(to, from, savedPosition) {
+  scrollBehavior() {
     return { x: 0, y: 0 };
   }
 });

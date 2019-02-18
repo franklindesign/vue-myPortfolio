@@ -1,9 +1,13 @@
 <template>
   <div>
     <div class="projects-container">
-      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
+      <div
+        class="mobile-item item-container"
+        v-for="project in projects"
+        :key="project.title"
+      >
         <router-link :to="`${project.link}`">
-          <img :src="`${project.image}`">
+          <img :src="`${project.image}`" />
 
           <div class="hover">
             <p class="project project_title">{{ project.title }}</p>

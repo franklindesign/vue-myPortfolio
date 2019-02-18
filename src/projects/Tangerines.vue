@@ -3,13 +3,15 @@
     <div class="projectImage"></div>
 
     <div class="description">
-      <h1 class="mb-3">{{projectName}}</h1>
+      <h1 class="mb-3">{{ projectName }}</h1>
       <p>project info</p>
 
       <div class="services mt-5">
         <h3>Services:</h3>
         <ul>
-          <li v-for="service in services" :key="service">{{service.service}}</li>
+          <li v-for="service in services" :key="service">
+            {{ service.service }}
+          </li>
         </ul>
       </div>
     </div>
