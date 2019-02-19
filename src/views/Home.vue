@@ -3,8 +3,8 @@
     <v-container class="mt-5">
       <p class="about aboutText">
         I'm Franklin, your design partner based in Los Angeles. Helping
-        companies develop consumer products and user friendly websites/apps.
-        I've worked alongside small businesses and entrepreneurs.
+        companies develop consumer products and user friendly web apps. I've
+        worked alongside small businesses and entrepreneurs.
       </p>
       <p class="about">Available for work, email me at manghi@gmail.com</p>
     </v-container>

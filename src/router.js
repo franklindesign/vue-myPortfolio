@@ -30,17 +30,17 @@ export default new Router({
       component: () => import("./views/Work.vue")
     },
     {
-      path: "/hibikisushi",
+      path: "/work/hibikisushi",
       name: "hibikisushi",
       component: () => import("./projects/Hibikisushi.vue")
     },
     {
-      path: "/nu",
+      path: "/work/nu",
       name: "nu",
       component: () => import("./projects/Nu.vue")
     },
     {
-      path: "/tangerines",
+      path: "/work/tangerines",
       name: "tangerines",
       component: () => import("./projects/Tangerines.vue")
     },

@@ -28,7 +28,7 @@ export default {
           title: "Build Your Creativity",
           description: "Wendy's Connectible Kid's Toy",
           image: "../img/work/BYC/work_byc_small.jpg",
-          link: "/byc"
+          link: "/work/byc"
         },
         {
           title: "Hibiki Sushi",
@@ -46,7 +46,7 @@ export default {
           title: "NU Superfood",
           description: "Nu Whey Protein",
           image: "../img/work/NU/work_nu_small.jpg",
-          link: "/nu"
+          link: "/work/nu"
         }
       ]
     };

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-toolbar dark flat class="toolbar-transparent" fixed height="75">
+    <v-toolbar dark flat class="toolbar-transparent" fixed height="70">
       <v-toolbar-title class="white--text">
         <router-link to="/" class="title">FRANKLIN DESIGN</router-link>
       </v-toolbar-title>
@@ -60,7 +60,13 @@
 </template>
 <style scoped>
 .toolbar-transparent {
-  background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: #000000;
+}
+
+@media screen and (min-width: 768px) {
+  .toolbar-transparent {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+  }
 }
 </style>
 

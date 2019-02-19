@@ -20,15 +20,11 @@
       <div class="services mt-5">
         <h3>Services:</h3>
         <ul>
-          <li v-for="service in services" :key="service">
-            {{ service.service }}
-          </li>
+          <li v-for="service in services" :key="service">{{ service.service }}</li>
         </ul>
       </div>
     </div>
-    <v-img contain src="/img/work/NU/work_nu_logo_1600x600.png"></v-img>
-    <v-img contain src="/img/work/NU/work_nu_label_large_1600x800.jpg"></v-img>
-    <v-img contain src="/img/work/NU/work_nu_statement_1600.jpg"></v-img>
+    <v-img contain v-for="image in images" :key="image" :src="`${image.src}`"></v-img>
   </div>
 </template>
 
@@ -41,6 +37,13 @@ export default {
         { service: "Identity Design" },
         { service: "Packaging" },
         { service: "Art Direction" }
+      ],
+      images: [
+        { src: "/img/work/NU/work_nu_logo_1600x600.png" },
+        { src: "/img/work/NU/work_nu_statement_1600.jpg" },
+        { src: "/img/work/NU/work_nu_label_large_1600x800.jpg" },
+        { src: "/img/work/NU/work_nu_seal_1600.jpg" },
+        { src: "/img/work/NU/work_nu_tradeshow_conceptonly.jpg" }
       ]
     };
   }
