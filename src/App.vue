@@ -20,7 +20,7 @@ export default {
   name: "App",
   metaInfo: {
     title: "Design by Franklin",
-    titleTemplate: "%s ← Franklin's Website"
+    titleTemplate: "%s"
   },
   components: {
     ToolBar,

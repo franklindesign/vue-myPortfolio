@@ -53,6 +53,11 @@ export default new Router({
       path: "/resources",
       name: "resources",
       component: () => import("./views/Resources.vue")
+    },
+    {
+      path: "*",
+      name: "Page Not Found",
+      component: Home
     }
   ],
   // Scroll to Top on Navigation

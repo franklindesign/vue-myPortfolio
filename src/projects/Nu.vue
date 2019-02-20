@@ -20,11 +20,18 @@
       <div class="services mt-5">
         <h3>Services:</h3>
         <ul>
-          <li v-for="service in services" :key="service">{{ service.service }}</li>
+          <li v-for="service in services" :key="service">
+            {{ service.service }}
+          </li>
         </ul>
       </div>
     </div>
-    <v-img contain v-for="image in images" :key="image" :src="`${image.src}`"></v-img>
+    <v-img
+      v-for="image in images"
+      :key="image"
+      :src="`${image.src}`"
+      class="imageBG"
+    ></v-img>
   </div>
 </template>
 
@@ -51,11 +58,11 @@ export default {
 </script>
 
 <style scoped>
+.imageBG {
+  background-color: white;
+}
 .projectDetail {
   font-size: 1.25em;
-}
-.nu {
-  z-index: 2;
 }
 .projectImage {
   background-image: url("/img/work/NU/work_nu_large_1600x600.jpg");
