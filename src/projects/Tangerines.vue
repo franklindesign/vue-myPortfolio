@@ -3,18 +3,28 @@
     <div class="projectImage"></div>
     <div class="description">
       <h1 class="mb-3">{{ projectName }}</h1>
-      <p
-        class="projectDetail"
-      >Tangerines is a field hockey team based in Orange County, California. The team contacted me for design services in creating an identity. I was tasked to design a web app as well that would integrate their posts from Facebook and other field hockey web sites via RSS feeds.</p>
+      <p class="projectDetail">
+        Tangerines is a field hockey team based in Orange County, California.
+        The team contacted me for design services in creating an identity. I was
+        tasked to design a web app as well that would integrate their posts from
+        Facebook and other field hockey web sites via RSS feeds.
+      </p>
 
       <div class="services mt-5">
         <h3>Services:</h3>
         <ul>
-          <li v-for="service in services" :key="service">{{ service.service }}</li>
+          <li v-for="service in services" :key="service">
+            {{ service.service }}
+          </li>
         </ul>
       </div>
     </div>
-    <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img>
+    <v-img
+      v-for="image in images"
+      :key="image"
+      :src="`${image.src}`"
+      class="imageBG"
+    ></v-img>
   </div>
 </template>
 

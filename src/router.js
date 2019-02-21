@@ -30,6 +30,11 @@ export default new Router({
       component: () => import("./views/Work.vue")
     },
     {
+      path: "/work/buildyourcreativity",
+      name: "nu",
+      component: () => import("./projects/BYC.vue")
+    },
+    {
       path: "/work/hibikisushi",
       name: "hibikisushi",
       component: () => import("./projects/Hibikisushi.vue")
@@ -56,7 +61,7 @@ export default new Router({
     },
     {
       path: "*",
-      name: "Page Not Found",
+      name: "home",
       component: Home
     }
   ],
