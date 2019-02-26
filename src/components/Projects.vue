@@ -26,7 +26,7 @@ export default {
       projects: [
         {
           title: "Build Your Creativity",
-          description: "Wendy's Connectible Kid's Toy",
+          description: "Wendy's Smart Links Kids Toys",
           image: "../img/work/BYC/work_byc_small.jpg",
           link: "/work/buildyourcreativity"
         },
@@ -34,7 +34,7 @@ export default {
           title: "Hibiki Sushi",
           description: "Santa Clarita's All You Can Eat Restaurant",
           image: "../img/work/HIBIKI/work_hibiki_small.jpg",
-          link: ""
+          link: "/work/hibikisushi"
         },
         {
           title: "TANGERINES",
@@ -77,7 +77,7 @@ export default {
     position: relative;
     width: 100vw;
     background-position: center;
-    background-color: rgb(77, 77, 77);
+    background-color: black;
   }
 
   .projects-container {
@@ -85,26 +85,20 @@ export default {
   }
 
   .project_title {
-    width: 100%;
-    position: absolute;
     font-weight: bold;
     bottom: 10%;
-    color: white;
-    background-color: black;
-    padding: 10px;
   }
   .project_description {
-    width: 100%;
-
-    position: absolute;
     bottom: 0;
-    color: white;
     font-size: 1em;
-    padding: 10px;
-    background-color: black;
   }
   .project {
+    padding: 10px;
+    position: absolute;
+    width: 100%;
     text-align: center;
+    color: white;
+    background-color: black;
   }
 }
 /* desktop styles */
@@ -154,26 +148,19 @@ export default {
   }
 
   .project_title {
-    width: 100%;
-    position: absolute;
     top: 40%;
-    color: white;
     font-weight: bold;
   }
   .project_description {
-    width: 100%;
-    position: absolute;
     top: 45%;
-    color: white;
     font-size: 1.5em;
     height: 50px;
   }
   .project {
+    color: white;
+    position: absolute;
     width: 100%;
     text-align: center;
-  }
-  .item-container {
-    background-color: rgb(24, 24, 24);
   }
 }
 </style>

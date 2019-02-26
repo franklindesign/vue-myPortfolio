@@ -1,8 +1,12 @@
 <template>
   <div class="nu">
     <div class="projectImage"></div>
-
     <div class="description">
+      <div class="container">
+        <div class="productContainer">
+          <v-img src="/img/work/NU/nu_whey_product.png" class="product"></v-img>
+        </div>
+      </div>
       <h1 class="mb-3">{{ projectName }}</h1>
       <p class="projectDetail">
         Nu Whey Protein is a unique health nutrition company founded by Lenyn V.
@@ -64,13 +68,15 @@ export default {
 .projectDetail {
   font-size: 1.25em;
 }
-.projectImage {
-  background-image: url("/img/work/NU/work_nu_large_1600x600.jpg");
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.productContainer {
+  width: 150px;
+}
+
 .description {
   margin: 25px;
   padding: 5px;
@@ -85,16 +91,46 @@ li {
 ul {
   padding: 0;
 }
+
+.product {
+  width: 100%;
+  top: -200px;
+  margin-bottom: -200px;
+}
+.projectImage {
+  height: 250px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8d8d+1,ffc1c1+100 */
+  background: #5ae68b; /* Old browsers */
+  background: -moz-linear-gradient(
+    top,
+    #5ae68b 1%,
+    #9effc0 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #5ae68b 1%,
+    #9effc0 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #5ae68b 1%,
+    #9effc0 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8d8d', endColorstr='#ffc1c1',GradientType=0 ); /* IE6-9 */
+}
+
 /* desktop styles */
 @media screen and (min-width: 768px) {
+  .productContainer {
+    width: 225px;
+  }
+  .product {
+    margin-bottom: -350px;
+    top: -350px;
+  }
   .projectImage {
-    max-width: 100%;
-    height: 600px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #5ae68b;
+    height: 400px;
   }
   .description {
     margin-left: 20%;

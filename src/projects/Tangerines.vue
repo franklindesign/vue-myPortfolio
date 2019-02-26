@@ -64,7 +64,7 @@ export default {
   justify-content: center;
 }
 .productContainer {
-  width: 50%;
+  width: 250px;
 }
 
 .description {
@@ -95,7 +95,7 @@ ul {
 /* desktop styles */
 @media screen and (min-width: 768px) {
   .productContainer {
-    width: 45%;
+    width: 300px;
   }
   .product {
     margin-bottom: -350px;
