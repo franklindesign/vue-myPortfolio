@@ -47,6 +47,18 @@ export default {
           description: "Nu Whey Protein",
           image: "../img/work/NU/work_nu_small.jpg",
           link: "/work/nu"
+        },
+        {
+          title: "Coming Soon",
+          description: "New Project",
+          image: "",
+          link: "/"
+        },
+        {
+          title: "Coming Soon",
+          description: "New Project",
+          image: "",
+          link: "/"
         }
       ]
     };
@@ -65,6 +77,7 @@ export default {
     position: relative;
     width: 100vw;
     background-position: center;
+    background-color: rgb(77, 77, 77);
   }
 
   .projects-container {
@@ -158,6 +171,9 @@ export default {
   .project {
     width: 100%;
     text-align: center;
+  }
+  .item-container {
+    background-color: rgb(24, 24, 24);
   }
 }
 </style>

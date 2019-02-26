@@ -2,6 +2,14 @@
   <div class="tangerines">
     <div class="projectImage"></div>
     <div class="description">
+      <div class="container">
+        <div class="productContainer">
+          <v-img
+            src="/img/work/OCFHC/tangerines_ipad_iphone.png"
+            class="product"
+          ></v-img>
+        </div>
+      </div>
       <h1 class="mb-3">{{ projectName }}</h1>
       <p class="projectDetail">
         Tangerines is a field hockey team based in Orange County, California.
@@ -50,13 +58,15 @@ export default {
 .projectDetail {
   font-size: 1.25em;
 }
-.projectImage {
-  background-image: url("/img/work/OCFHC/tangerines_caseStudy_01.jpg");
-  height: 400px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.productContainer {
+  width: 50%;
+}
+
 .description {
   margin: 25px;
   padding: 5px;
@@ -71,16 +81,29 @@ li {
 ul {
   padding: 0;
 }
+
+.product {
+  width: 100%;
+  top: -200px;
+  margin-bottom: -200px;
+}
+.projectImage {
+  background-color: #f48d3f;
+  height: 250px;
+}
+
 /* desktop styles */
 @media screen and (min-width: 768px) {
+  .productContainer {
+    width: 45%;
+  }
+  .product {
+    margin-bottom: -350px;
+    top: -350px;
+  }
   .projectImage {
-    max-width: 100%;
-    height: 600px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #f48d3f;
+    height: 400px;
   }
   .description {
     margin-left: 20%;

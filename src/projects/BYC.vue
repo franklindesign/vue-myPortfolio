@@ -1,11 +1,21 @@
 <template>
   <div class="byc">
     <div class="projectImage"></div>
-
     <div class="description">
-      <v-img src="/img/work/BYC/byc.png" class="product"></v-img>
+      <div class="container">
+        <div class="productContainer">
+          <v-img src="/img/work/BYC/byc.png" class="product"></v-img>
+        </div>
+      </div>
+
       <h1 class="mb-3">{{ projectName }}</h1>
-      <!-- <p class="projectDetail">Build Your Creativity</p> -->
+      <p class="projectDetail">
+        Smart Links 2-in-1 Build Your Creativiy series is a kid's toy bundled
+        with the Kids meal. As a freelancer at STROTTMAN, I have assisted in the
+        packaging design, finishing tasks needed to push closer to the final
+        rounds of revision. With my assist, the creative team were able to
+        finish the project for Wendy's just in time for scheduled production.
+      </p>
       <div class="services mt-5">
         <h3>Services:</h3>
         <ul>
@@ -38,21 +48,15 @@ export default {
 .projectDetail {
   font-size: 1.25em;
 }
-.product {
-  width: 100%;
-  height: auto;
-  top: -125px;
-  margin-bottom: -120px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.projectImage {
-  /* background-image: url("/img/work/BYC/work_byc_01.jpg");
+.productContainer {
+  width: 50%;
+}
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; */
-  background-color: #b0f7ff;
-  height: 200px;
-}
 .description {
   margin: 25px;
   padding: 5px;
@@ -67,20 +71,29 @@ li {
 ul {
   padding: 0;
 }
+
+.product {
+  width: 100%;
+  top: -200px;
+  margin-bottom: -200px;
+}
+.projectImage {
+  background-color: #b0f7ff;
+  height: 250px;
+}
+
 /* desktop styles */
 @media screen and (min-width: 768px) {
+  .productContainer {
+    width: 30%;
+  }
   .product {
-    margin-bottom: -300px;
-    top: -300px;
+    margin-bottom: -350px;
+    top: -350px;
   }
   .projectImage {
-    /* max-width: 100%; */
+    background-color: #b0f7ff;
     height: 400px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
   .description {
     margin-left: 20%;

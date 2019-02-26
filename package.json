@@ -9,25 +9,25 @@
   },
   "dependencies": {
     "@vue/cli": "^3.4.1",
-    "ajv": "^6.9.1",
+    "ajv": "^6.9.2",
     "register-service-worker": "^1.6.2",
-    "vue": "^2.6.6",
+    "vue": "^2.6.7",
     "vue-meta": "^1.5.8",
     "vue-router": "^3.0.2",
     "vuetify": "^1.5.2"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-plugin-eslint": "^3.4.0",
-    "@vue/cli-plugin-pwa": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
+    "@vue/cli-plugin-babel": "^3.4.1",
+    "@vue/cli-plugin-eslint": "^3.4.1",
+    "@vue/cli-plugin-pwa": "^3.4.1",
+    "@vue/cli-service": "^3.4.1",
     "@vue/eslint-config-prettier": "^4.0.1",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.14.1",
     "eslint-plugin-vue": "^5.2.2",
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
-    "vue-template-compiler": "^2.6.6"
+    "vue-template-compiler": "^2.6.7"
   },
   "eslintConfig": {
     "root": true,

@@ -31,7 +31,7 @@ export default new Router({
     },
     {
       path: "/work/buildyourcreativity",
-      name: "nu",
+      name: "buildyourcreativity",
       component: () => import("./projects/BYC.vue")
     },
     {
@@ -61,8 +61,8 @@ export default new Router({
     },
     {
       path: "*",
-      name: "home",
-      component: Home
+      name: "404",
+      component: () => import("./views/404.vue")
     }
   ],
   // Scroll to Top on Navigation
