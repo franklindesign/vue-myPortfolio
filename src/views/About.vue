@@ -9,7 +9,7 @@
       </div>
 
       <div class="mt-3">
-        <button class="viewResume" @click="viewResume = !viewResume">
+        <button class="buttonStyle" @click="viewResume = !viewResume">
           View Resume
         </button>
         <div v-show="viewResume" class="centerResume">
@@ -39,13 +39,24 @@ export default {
 .topSpacing {
   padding-top: 50px;
 }
-.viewResume {
-  color: black;
-  width: 150px;
+.buttonStyle {
+  width: 200px;
   margin: 10px;
   padding: 10px;
-  background: rgb(206, 206, 206);
-  border-radius: 25px;
+  transform: scale(1);
+  background-color: #323232;
+  border-radius: 50px;
+}
+a {
+  color: rgb(199, 199, 199);
+}
+a:hover {
+  color: black;
+}
+.buttonStyle:hover {
+  background-color: #00a6ff;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
 }
 
 /* mobile styles */

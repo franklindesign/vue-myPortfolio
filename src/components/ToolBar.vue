@@ -2,7 +2,7 @@
   <div>
     <v-toolbar dark flat class="toolbar-transparent" fixed height="70">
       <v-toolbar-title class="white--text">
-        <router-link to="/" class="title">FRANKLIN DESIGN</router-link>
+        <router-link to="/" class="title">Franklin Design</router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -59,13 +59,16 @@
   </div>
 </template>
 <style scoped>
+.title {
+  font-family: "fira code" !important;
+}
 .toolbar-transparent {
-  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 @media screen and (min-width: 768px) {
   .toolbar-transparent {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(0, 0, 0, 0.8) !important;
   }
 }
 </style>

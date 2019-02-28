@@ -25,6 +25,7 @@
         </ul>
       </div>
     </div>
+
     <!-- <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img> -->
   </div>
 </template>
@@ -84,6 +85,11 @@ ul {
 
 /* desktop styles */
 @media screen and (min-width: 768px) {
+  iframe {
+    height: 800px;
+    margin: 0;
+    padding: 0;
+  }
   .productContainer {
     width: 250px;
   }

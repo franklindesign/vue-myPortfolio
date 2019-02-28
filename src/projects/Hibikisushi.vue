@@ -20,7 +20,8 @@
         Mailchimp was also integrated into the website in order to keep constant
         contact with customers.
       </p>
-      <div class="services mt-5">
+
+      <div class="services mt-5 mb-3">
         <h3>Services:</h3>
         <ul>
           <li v-for="service in services" :key="service">
@@ -28,6 +29,9 @@
           </li>
         </ul>
       </div>
+      <a href="http://www.hibikisushi.net" target="_blank">
+        <button class="buttonStyle">View Live Project</button>
+      </a>
     </div>
     <!-- <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img> -->
   </div>
@@ -52,6 +56,25 @@ export default {
 </script>
 
 <style scoped>
+.buttonStyle {
+  width: 200px;
+  margin: 10px;
+  padding: 5px;
+  transform: scale(1);
+  background-color: #323232;
+  border-radius: 50px;
+}
+a {
+  color: rgb(199, 199, 199);
+}
+a:hover {
+  color: black;
+}
+.buttonStyle:hover {
+  background-color: #ff8d8d;
+  transform: scale(1.1);
+  transition: all 300ms ease-out;
+}
 .imageBG {
   background-color: white;
 }
