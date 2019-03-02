@@ -1,13 +1,12 @@
 <template>
   <div>
     <div class="projects-container">
-      <div
-        class="mobile-item item-container"
-        v-for="project in projects"
-        :key="project.title"
-      >
+      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
         <router-link :to="`${project.link}`">
-          <img :src="`${project.image}`" />
+          <picture>
+            <source type="image/webp" :srcset="`${project.webp}`">
+            <img :src="`${project.image}`" :alt="`${project.alt}`">
+          </picture>
 
           <div class="hover">
             <p class="project project_title">{{ project.title }}</p>
@@ -27,37 +26,49 @@ export default {
         {
           title: "Build Your Creativity",
           description: "Wendy's Smart Links Kids Toys",
-          image: "../img/work/BYC/work_byc_small.jpg",
+          image: "../img/work/BYC/byc_project.png",
+          webp: "../img/work/BYC/byc_project.webp",
+          alt: "",
           link: "/work/buildyourcreativity"
         },
         {
           title: "Hibiki Sushi",
           description: "Santa Clarita's All You Can Eat Restaurant",
-          image: "../img/work/HIBIKI/work_hibiki_small.jpg",
+          image: "../img/work/HIBIKI/hibiki_project.jpg",
+          webp: "../img/work/HIBIKI/hibiki_project.webp",
+          alt: "",
           link: "/work/hibikisushi"
         },
         {
           title: "TANGERINES",
           description: "Orange County Field Hockey Club",
-          image: "../img/work/OCFHC/work_ocfhc_small.jpg",
+          image: "../img/work/OCFHC/tangerines_project.png",
+          webp: "../img/work/OCFHC/tangerines_project.webp",
+          alt: "Project Tangerines",
           link: "/work/tangerines"
         },
         {
           title: "NU Superfood",
           description: "Nu Whey Protein",
-          image: "../img/work/NU/work_nu_small.jpg",
+          image: "../img/work/NU/nu_project.png",
+          webp: "../img/work/NU/nu_project.webp",
+          alt: "",
           link: "/work/nu"
         },
         {
           title: "Coming Soon",
           description: "New Project",
           image: "",
+          webp: "",
+          alt: "",
           link: "/"
         },
         {
           title: "Coming Soon",
           description: "New Project",
           image: "",
+          webp: "",
+          alt: "",
           link: "/"
         }
       ]
