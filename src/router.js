@@ -60,6 +60,26 @@ export default new Router({
       component: () => import("./views/Resources.vue")
     },
     {
+      path: "/resources/vue",
+      name: "vue",
+      component: () => import("./resources/Vue.vue")
+    },
+    {
+      path: "/resources/react",
+      name: "react",
+      component: () => import("./resources/React.vue")
+    },
+    {
+      path: "/resources/graphicdesign",
+      name: "graphicdesign",
+      component: () => import("./resources/GraphicDesign.vue")
+    },
+    {
+      path: "/resources/ux",
+      name: "uxdesign",
+      component: () => import("./resources/UX.vue")
+    },
+    {
       path: "*",
       name: "404",
       component: () => import("./views/404.vue")

@@ -19,8 +19,4 @@ export default {
 };
 </script>
 
-<style scoped>
-.topSpacing {
-  padding-top: 50px;
-}
-</style>
+<style scoped></style>

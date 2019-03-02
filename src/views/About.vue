@@ -71,6 +71,7 @@ a:hover {
 @media screen and (min-width: 768px) {
   .me {
     font-size: 1.5em;
+    width: 800px;
   }
   .what {
     font-size: 1em;

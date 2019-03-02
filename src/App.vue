@@ -19,7 +19,8 @@ import BottomNav from "@/components/BottomNav.vue";
 export default {
   name: "App",
   metaInfo: {
-    title: "Design by Franklin",
+    title:
+      "Franklin Manghi: [Graphic Designer + Product Designer + UI Developer]",
     titleTemplate: "%s"
   },
   components: {

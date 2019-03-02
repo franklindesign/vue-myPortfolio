@@ -5,9 +5,3 @@
     <p>Coming Soon</p>
   </v-container>
 </template>
-
-<style scoped>
-.topSpacing {
-  padding-top: 50px;
-}
-</style>

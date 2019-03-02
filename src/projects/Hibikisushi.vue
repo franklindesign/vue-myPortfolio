@@ -149,5 +149,8 @@ ul {
     margin-left: 20%;
     width: 50vw;
   }
+  .projectDetail {
+    width: 800px;
+  }
 }
 </style>
