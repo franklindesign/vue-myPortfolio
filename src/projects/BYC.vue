@@ -10,23 +10,21 @@
 
       <h1 class="mb-3">{{ projectName }}</h1>
       <p class="projectDetail">
-        Smart Links 2-in-1 Build Your Creativiy series is a kid's toy bundled
-        with the Kids meal. As a freelancer at STROTTMAN, I have assisted in the
-        packaging design, finishing tasks needed to push closer to the final
-        rounds of revision. With my assist, the creative team were able to
-        finish the project for Wendy's just in time for scheduled production.
+        Wendy's Build Your Creativity Smart Links Kids Toy 2-in-1 series is
+        included with kids meal. As a freelancer at STROTTMAN, I have assisted
+        in the packaging design, editing assets, as well as
+        finishing other tasks needed to push closer to the final rounds of revision.
+        With my assist, the creative team were able to finish the project for
+        Wendy's just in time for final approval.
       </p>
       <div class="services mt-5">
         <h3>Services:</h3>
         <ul>
-          <li v-for="service in services" :key="service">
-            {{ service.service }}
-          </li>
+          <li v-for="service in services" :key="service">{{ service.service }}</li>
         </ul>
       </div>
     </div>
-
-    <!-- <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img> -->
+    <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img>
   </div>
 </template>
 
@@ -36,7 +34,7 @@ export default {
     return {
       projectName: "Wendy's Build Your Creativity",
       services: [{ service: "Packaging Design" }],
-      images: [{ src: "/img/work/NU/work_nu_logo_1600x600.png" }]
+      images: [{ src: "/img/work/BYC/work_byc_01.jpg" }]
     };
   }
 };
@@ -55,7 +53,7 @@ export default {
   justify-content: center;
 }
 .productContainer {
-  width: 200px;
+  width: 250px;
 }
 
 .description {
@@ -91,7 +89,7 @@ ul {
     padding: 0;
   }
   .productContainer {
-    width: 250px;
+    width: 450px;
   }
   .product {
     margin-bottom: -350px;
