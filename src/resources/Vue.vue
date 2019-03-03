@@ -47,8 +47,7 @@ export default {
         {
           subtitle: "Github/Awesome-Vue",
           description: "A curated list of awesome things related to Vue.js",
-          image:
-            "https://github.com/vuejs/awesome-vue/raw/master/logo.svg?sanitize=true",
+          image: "/img/src/logos/awesome-vue-logo.svg",
           link: "https://github.com/vuejs/awesome-vue"
         }
       ]

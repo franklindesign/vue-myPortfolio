@@ -61,8 +61,7 @@ export default {
           description: "Inspirations and resources for graphic designers",
           color: "grey lighten-3",
           class: "black",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/a/ac/Creative_Cloud.svg",
+          image: "../img/src/logos/Creative_Cloud.svg",
           link: "/resources/graphicdesign"
         },
         {
@@ -70,7 +69,7 @@ export default {
           description: "UX/UI resources",
           color: "white",
           class: "white",
-          image: "../img/src/UX.png",
+          image: "../img/src/logos/UX.png",
           link: "/resources/ux"
         },
         {
@@ -78,8 +77,7 @@ export default {
           description: "Great resources for Vue Javascript UI Library",
           color: "green",
           class: "white--text",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg",
+          image: "../img/src/logos/Vue.js_Logo_2.svg",
           link: "/resources/vue"
         },
         {
@@ -87,8 +85,7 @@ export default {
           description: "Great resources for React Javascript UI Library",
           color: "blue",
           class: "white--text",
-          image:
-            "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg",
+          image: "../img/src/logos/React-icon.svg",
           link: "/resources/react"
         }
       ]

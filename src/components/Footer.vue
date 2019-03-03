@@ -31,9 +31,14 @@ export default {
   data: () => ({
     items: [
       {
-        title: "Twitter",
-        icon: "fab fa-twitter",
-        link: "http://www.twitter.com/franklinsans"
+        title: "LinkedIn",
+        icon: "fab fa-linkedin",
+        link: "http://www.linkedin.com/in/franklinmanghi"
+      },
+      {
+        title: "Behance",
+        icon: "fab fa-behance",
+        link: "http://www.behance.net/franklinmanghi"
       },
       {
         title: "Dribbble",
@@ -42,20 +47,15 @@ export default {
       },
 
       {
-        title: "Behance",
-        icon: "fab fa-behance",
-        link: "http://www.behance.net/franklinmanghi"
-      },
-      {
         title: "Github",
         icon: "fab fa-github",
         link: "http://www.github.com/franklindesign"
       },
 
       {
-        title: "LinkedIn",
-        icon: "fab fa-linkedin",
-        link: "http://www.linkedin.com/in/franklinmanghi"
+        title: "Twitter",
+        icon: "fab fa-twitter",
+        link: "http://www.twitter.com/franklinsans"
       }
     ]
   })

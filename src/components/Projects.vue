@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="projects-container">
-      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
+      <div
+        class="mobile-item item-container"
+        v-for="project in projects"
+        :key="project.title"
+      >
         <router-link :to="`${project.link}`">
           <picture>
-            <source type="image/webp" :srcset="`${project.webp}`">
-            <img :src="`${project.image}`" :alt="`${project.alt}`">
+            <source type="image/webp" :srcset="`${project.webp}`" />
+            <img :src="`${project.image}`" :alt="`${project.alt}`" />
           </picture>
 
           <div class="hover">
@@ -25,10 +29,10 @@ export default {
       projects: [
         {
           title: "Build Your Creativity",
-          description: "Wendy's Smart Links Kids Toys",
+          description: "Wendy's 2-in-1 Smart Links Kids Toys",
           image: "../img/work/BYC/byc_project.png",
           webp: "../img/work/BYC/byc_project.webp",
-          alt: "",
+          alt: "Build Your Creativity project with STROTTMAN",
           link: "/work/buildyourcreativity"
         },
         {
@@ -36,7 +40,7 @@ export default {
           description: "Santa Clarita's All You Can Eat Restaurant",
           image: "../img/work/HIBIKI/hibiki_project.jpg",
           webp: "../img/work/HIBIKI/hibiki_project.webp",
-          alt: "",
+          alt: "Hibiki Sushi & Bar Project",
           link: "/work/hibikisushi"
         },
         {
@@ -52,7 +56,7 @@ export default {
           description: "Nu Whey Protein",
           image: "../img/work/NU/nu_project.png",
           webp: "../img/work/NU/nu_project.webp",
-          alt: "",
+          alt: "Package Design for NU",
           link: "/work/nu"
         },
         {

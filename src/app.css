@@ -1,5 +1,3 @@
-@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
-
 #app {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Open Sans", "Helvetica Neue", sans-serif;
@@ -28,8 +26,14 @@ a:hover {
   text-decoration: none;
 }
 
-.vue-typer {
+@font-face {
   font-family: "fira code";
+  font-display: auto;
+  src: local('fira code', url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css));
+}
+
+.vue-typer {
+  font-family: "fira code", monospace;
   font-size: 2em;
 }
 
@@ -51,7 +55,7 @@ a:hover {
     font-size: 3em;
   }
   .vue-typer {
-    font-family: "fira code";
+    font-family: "fira code", monospace;
     font-size: 4em;
   }
   .vue-typer .custom.char {
