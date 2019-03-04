@@ -46,6 +46,13 @@ export default {
             "A collection of awesome things regarding React ecosystem.",
           image: "../img/src/awesome-react.jpg",
           link: "https://github.com/enaqx/awesome-react"
+        },
+        {
+          subtitle: "The React Handbook by Flavio Copes",
+          description:
+            "Free React handbook written by Flavio Copes, available in PDF, ePub, and Mobi.",
+          image: "../img/src/react-handbook-flavio.jpg",
+          link: "https://flaviocopes.com/page/ebooks-links/"
         }
       ]
     };

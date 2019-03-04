@@ -33,7 +33,10 @@
         <button class="buttonStyle">View Live Project</button>
       </a>
     </div>
-    <!-- <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img> -->
+    <picture v-for="image in images" :key="image.src">
+      <source type="image/webp" :srcset="`${image.webp}`" />
+      <v-img :src="`${image.src}`" class="imageBG"></v-img>
+    </picture>
   </div>
 </template>
 
@@ -49,7 +52,20 @@ export default {
         { service: "Email Design" },
         { service: "Social Media Marketing" }
       ],
-      images: [{ src: "/img/work/NU/work_nu_logo_1600x600.png" }]
+      images: [
+        {
+          src: "/img/work/HIBIKI/hibiki_logo.jpg",
+          webp: ""
+        },
+        {
+          src: "/img/work/HIBIKI/hibiki_restaurantMenu.png",
+          webp: "/img/work/HIBIKI/hibiki_restaurantMenu.webp"
+        },
+        {
+          src: "/img/work/HIBIKI/hibiki_take-outMenu.png",
+          webp: "/img/work/HIBIKI/hibiki_restaurantMenu.webp"
+        }
+      ]
     };
   }
 };
@@ -76,7 +92,7 @@ a:hover {
   transition: all 300ms ease-out;
 }
 .imageBG {
-  background-color: white;
+  background-color: rgb(6, 6, 6);
 }
 .projectDetail {
   font-size: 1.25em;

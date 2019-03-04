@@ -19,7 +19,6 @@
               class="white--text"
               height="200px"
               :src="`${source.image}`"
-              contain
             ></v-img>
             <v-card-title>
               <div>
@@ -49,6 +48,13 @@ export default {
           description: "A curated list of awesome things related to Vue.js",
           image: "/img/src/logos/awesome-vue-logo.svg",
           link: "https://github.com/vuejs/awesome-vue"
+        },
+        {
+          subtitle: "The Vue Handbook by Flavio Copes",
+          description:
+            "Free Vue handbook written by Flavio Copes, available in PDF, ePub, and Mobi.",
+          image: "../img/src/vue-handbook-flavio.jpg",
+          link: "https://flaviocopes.com/page/ebooks-links/"
         }
       ]
     };

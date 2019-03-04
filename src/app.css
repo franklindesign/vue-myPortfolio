@@ -49,6 +49,9 @@ a:hover {
   width: 3px;
   background-color: #6a6a6a;
 }
+.topSpacing {
+  padding-top: 50px;
+}
 
 @media screen and (min-width: 768px) {
   h1 {

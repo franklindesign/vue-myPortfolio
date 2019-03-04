@@ -2,7 +2,10 @@
   <div>
     <v-toolbar dark flat class="toolbar-transparent" fixed height="70">
       <v-toolbar-title class="white--text">
-        <router-link to="/" class="title">Franklin Design</router-link>
+        <router-link to="/" class="title">
+          Franklin Design
+          <span class="caretColor blink">|</span>
+        </router-link>
       </v-toolbar-title>
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
@@ -59,6 +62,24 @@
   </div>
 </template>
 <style scoped>
+.caretColor {
+  color: rgb(155, 155, 155);
+  margin-left: -14px;
+}
+.blink {
+  animation: blink-animation 950ms steps(4, start) infinite;
+  -webkit-animation: blink-animation 950ms steps(4, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
 .title {
   font-family: "fira code" !important;
 }

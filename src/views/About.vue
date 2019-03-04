@@ -9,8 +9,12 @@
       </div>
 
       <div class="mt-3">
-        <button class="buttonStyle" @click="viewResume = !viewResume">
-          View Resume
+        <button
+          class="buttonStyle"
+          :class="{ buttonStyle: !viewResume, closeStyle: viewResume }"
+          @click="viewResume = !viewResume"
+        >
+          Resume
         </button>
         <div v-show="viewResume" class="centerResume">
           <Resume></Resume>
@@ -25,6 +29,7 @@ import Resume from "@/components/Resume.vue";
 export default {
   data() {
     return {
+      closeResume: true,
       viewResume: false
     };
   },
@@ -36,15 +41,20 @@ export default {
 </script>
 
 <style scoped>
-.topSpacing {
-  padding-top: 50px;
-}
 .buttonStyle {
   width: 200px;
   margin: 10px;
   padding: 10px;
   transform: scale(1);
   background-color: #323232;
+  border-radius: 50px;
+}
+.closeStyle {
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  transform: scale(1);
+  background-color: #00a6ff;
   border-radius: 50px;
 }
 a {
@@ -54,7 +64,6 @@ a:hover {
   color: black;
 }
 .buttonStyle:hover {
-  background-color: #00a6ff;
   transform: scale(1.1);
   transition: all 300ms ease-out;
 }

@@ -38,7 +38,7 @@ export default {
         {
           title: "Hibiki Sushi",
           description: "Santa Clarita's All You Can Eat Restaurant",
-          image: "../img/work/HIBIKI/hibiki_project.jpg",
+          image: "../img/work/HIBIKI/hibiki_project.png",
           webp: "../img/work/HIBIKI/hibiki_project.webp",
           alt: "Hibiki Sushi & Bar Project",
           link: "/work/hibikisushi"
