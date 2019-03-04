@@ -41,7 +41,10 @@ export default {
     return {
       projectName: "Wendy's Build Your Creativity",
       services: [{ service: "Packaging Design" }],
-      images: [{ src: "/img/work/BYC/byc_toypicnic.jpeg" }]
+      images: [
+        { src: "/img/work/BYC/byc_packaging.jpg" },
+        { src: "/img/work/BYC/byc_toypicnic.jpeg" }
+      ]
     };
   }
 };

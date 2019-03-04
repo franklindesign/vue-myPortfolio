@@ -28,6 +28,7 @@
               <div>
                 <span class="grey--text">{{ source.subtitle }}</span>
                 <br />
+                <br />
                 <span>{{ source.description }}</span>
                 <br />
               </div>

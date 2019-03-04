@@ -63,7 +63,7 @@ export default {
         },
         {
           src: "/img/work/HIBIKI/hibiki_take-outMenu.png",
-          webp: "/img/work/HIBIKI/hibiki_restaurantMenu.webp"
+          webp: "/img/work/HIBIKI/hibiki_take-outMenu.webp"
         }
       ]
     };
