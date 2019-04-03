@@ -1,16 +1,20 @@
 <template>
   <div>
     <div class="projects-container">
-      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
-        <router-link :to="`${project.link}`">
+      <div
+        class="mobile-item item-container"
+        v-for="illustration in illustrations"
+        :key="illustration.title"
+      >
+        <router-link :to="`${illustration.link}`">
           <picture>
-            <source type="image/webp" :srcset="`${project.webp}`">
-            <img :src="`${project.image}`" :alt="`${project.alt}`">
+            <source type="image/webp" :srcset="`${illustration.webp}`">
+            <img :src="`${illustration.image}`" :alt="`${illustration.alt}`">
           </picture>
 
           <div class="hover">
-            <p class="project project_title">{{ project.title }}</p>
-            <p class="project project_description">{{ project.description }}</p>
+            <p class="project project_title">{{ illustration.title }}</p>
+            <p class="project project_description">{{ illustration.description }}</p>
           </div>
         </router-link>
       </div>
@@ -20,56 +24,42 @@
 
 <script>
 export default {
+  name: "Illustrations",
   data() {
     return {
-      projects: [
+      illustrations: [
         {
-          title: "Build Your Creativity",
-          description: "Wendy's 2-in-1 Smart Links Kids Toys",
-          image: "../img/work/BYC/byc_project.png",
-          webp: "../img/work/BYC/byc_project.webp",
-          alt: "Build Your Creativity project with STROTTMAN",
-          link: "/work/buildyourcreativity"
-        },
-        {
-          title: "Hibiki Sushi",
-          description: "Santa Clarita's All You Can Eat Restaurant",
-          image: "../img/work/HIBIKI/hibiki_project.png",
-          webp: "../img/work/HIBIKI/hibiki_project.webp",
-          alt: "Hibiki Sushi & Bar Project",
-          link: "/work/hibikisushi"
-        },
-        {
-          title: "TANGERINES",
-          description: "Orange County Field Hockey Club",
-          image: "../img/work/OCFHC/tangerines_project.png",
-          webp: "../img/work/OCFHC/tangerines_project.webp",
-          alt: "Project Tangerines",
-          link: "/work/tangerines"
-        },
-        {
-          title: "NU Superfood",
-          description: "Nu Whey Protein",
-          image: "../img/work/NU/nu_project.png",
-          webp: "../img/work/NU/nu_project.webp",
-          alt: "Package Design for NU",
-          link: "/work/nu"
-        },
-        {
-          title: "Illustrations",
-          description: "Various Experimental Illustrations",
-          image: "../img/work/Illustrations/illustrations_thumbs.jpg",
+          title: "AirMax90 + Lego",
+          description: "Concept: AirMax90",
+          image: "../img/work/Illustrations/AirMax/AirMax_thumb.jpg",
           webp: "",
-          alt: "Various Experimental Illustrations",
-          link: "/work/illustrations"
+          alt: "AirMax90 + LEGO",
+          link: "/work/Illustrations/AirMax90"
         },
         {
-          title: "Coming Soon",
-          description: "New Project",
-          image: "",
+          title: "WIN FROM WITHIN",
+          description: "Concept: Win From Within",
+          image:
+            "../img/work/Illustrations/winFromWithin/WinFromWithin_thumb.jpg",
           webp: "",
-          alt: "",
-          link: "/"
+          alt: "WIN FROM WITHIN",
+          link: "/work/Illustrations/WinFromWithin"
+        },
+        {
+          title: "Jordan '94 Flu Game",
+          description: "Concept: Jordan '94 Flu Game",
+          image: "../img/work/Illustrations/Jordan/JordanFluGame_thumb.jpg",
+          webp: "",
+          alt: "Jordan '94 Flu Game",
+          link: "/work/Illustrations/Jordan94"
+        },
+        {
+          title: "Breaking Bad: WW",
+          description: "Concept: Walter White",
+          image: "../img/work/Illustrations/BrBa/WW_thumb.jpg",
+          webp: "",
+          alt: "Breaking Bad: Walter White",
+          link: "/work/Illustrations/WalterWhite"
         }
       ]
     };

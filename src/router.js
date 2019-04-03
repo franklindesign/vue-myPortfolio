@@ -55,6 +55,31 @@ export default new Router({
     //   component: () => import("./views/Blog.vue")
     // },
     {
+      path: "/work/illustrations",
+      name: "illustrations",
+      component: () => import("./views/Illustrations.vue")
+    },
+    {
+      path: "/work/Illustrations/Jordan94",
+      name: "jordan94",
+      component: () => import("./projects/illustrations/Jordan94FluGame.vue")
+    },
+    {
+      path: "/work/Illustrations/WinFromWithin",
+      name: "WinFromWithin",
+      component: () => import("./projects/illustrations/WinFromWithin.vue")
+    },
+    {
+      path: "/work/Illustrations/AirMax90",
+      name: "airmax90",
+      component: () => import("./projects/illustrations/AirMax.vue")
+    },
+    {
+      path: "/work/Illustrations/WalterWhite",
+      name: "ww",
+      component: () => import("./projects/illustrations/BrBa.vue")
+    },
+    {
       path: "/resources",
       name: "resources",
       component: () => import("./views/Resources.vue")
