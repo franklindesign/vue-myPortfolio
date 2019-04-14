@@ -49,6 +49,11 @@ export default new Router({
       name: "tangerines",
       component: () => import("./projects/Tangerines.vue")
     },
+    {
+      path: "/demo/clientc",
+      name: "clientc",
+      component: () => import("./projects/demo/ClientC.vue")
+    },
     // {
     //   path: "/blog",
     //   name: "blog",

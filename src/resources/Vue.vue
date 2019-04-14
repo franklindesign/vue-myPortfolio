@@ -91,6 +91,20 @@ export default {
           description: "A collection of projects made with vue.js by others.",
           image: "../img/src/madewithvuejs.jpg",
           link: "https://madewithvuejs.com/"
+        },
+        {
+          subtitle: "Alligator",
+          description:
+            "Various tutorials and articles on front-end web development",
+          image: "../img/src/alligator.jpg",
+          link: "https://alligator.io/"
+        },
+        {
+          subtitle: "CSS-Tricks",
+          description:
+            "Tips, Tricks, and Techniques on using Cascading Style Sheets.",
+          image: "../img/src/csstricks.jpg",
+          link: "https://css-tricks.com/"
         }
       ]
     };

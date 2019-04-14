@@ -4,15 +4,24 @@
     <div class="description">
       <div class="container">
         <div class="productContainer">
-          <v-img src="/img/work/Illustrations/BrBa/ww.png" class="product"></v-img>
+          <v-img
+            src="/img/work/Illustrations/BrBa/ww.png"
+            class="product"
+          ></v-img>
         </div>
       </div>
       <h1 class="mb-3">{{ projectName }}</h1>
-      <p
-        class="projectDetail"
-      >Experimental portrait illustration based on Breaking Bad's character, Walter White.</p>
+      <p class="projectDetail">
+        Experimental portrait illustration based on Breaking Bad's character,
+        Walter White.
+      </p>
     </div>
-    <v-img v-for="image in images" :key="image" :src="`${image.src}`" class="imageBG"></v-img>
+    <v-img
+      v-for="image in images"
+      :key="image"
+      :src="`${image.src}`"
+      class="imageBG"
+    ></v-img>
   </div>
 </template>
 

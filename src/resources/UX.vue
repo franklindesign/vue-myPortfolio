@@ -52,6 +52,22 @@ export default {
             "NN/g UX research reports include thousands of actionable, illustrated user experience guidelines for creating and improving your web, mobile, and intranet sites.",
           image: "../img/src/nng.jpg",
           link: "https://www.nngroup.com/reports/"
+        },
+        {
+          title: "",
+          subtitle: "UXPin",
+          description:
+            "Thoughtful content on mobile & web prototyping, wireframing, mockups, usability testing, project management, design process & more.",
+          image: "../img/src/uxpin.jpg",
+          link: "https://www.uxpin.com/studio/ebooks/"
+        },
+        {
+          title: "",
+          subtitle: "ADELE by UXPin",
+          description:
+            "The repository of publicly available design systems and pattern libraries.",
+          image: "../img/src/adele.jpg",
+          link: "https://adele.uxpin.com/"
         }
       ]
     };

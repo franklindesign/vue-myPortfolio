@@ -86,6 +86,20 @@ export default {
           description: "A collection of projects made with React",
           image: "../img/src/madewithreact.jpg",
           link: "https://madewithreactjs.com/"
+        },
+        {
+          subtitle: "Alligator",
+          description:
+            "Various tutorials and articles on front-end web development",
+          image: "../img/src/alligator.jpg",
+          link: "https://alligator.io/"
+        },
+        {
+          subtitle: "CSS-Tricks",
+          description:
+            "Tips, Tricks, and Techniques on using Cascading Style Sheets.",
+          image: "../img/src/csstricks.jpg",
+          link: "https://css-tricks.com/"
         }
       ]
     };

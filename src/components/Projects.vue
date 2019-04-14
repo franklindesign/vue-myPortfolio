@@ -1,11 +1,15 @@
 <template>
   <div>
     <div class="projects-container">
-      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
+      <div
+        class="mobile-item item-container"
+        v-for="project in projects"
+        :key="project.title"
+      >
         <router-link :to="`${project.link}`">
           <picture>
-            <source type="image/webp" :srcset="`${project.webp}`">
-            <img :src="`${project.image}`" :alt="`${project.alt}`">
+            <source type="image/webp" :srcset="`${project.webp}`" />
+            <img :src="`${project.image}`" :alt="`${project.alt}`" />
           </picture>
 
           <div class="hover">
@@ -56,20 +60,20 @@ export default {
           link: "/work/nu"
         },
         {
+          title: "ClientC (Demo)",
+          description: "Client Managing App",
+          image: "../img/work/ClientC/clientc_thumb.jpg",
+          webp: "",
+          alt: "ClienC (Demo)",
+          link: "/demo/clientc"
+        },
+        {
           title: "Illustrations",
           description: "Various Experimental Illustrations",
           image: "../img/work/Illustrations/illustrations_thumbs.jpg",
           webp: "",
           alt: "Various Experimental Illustrations",
           link: "/work/illustrations"
-        },
-        {
-          title: "Coming Soon",
-          description: "New Project",
-          image: "",
-          webp: "",
-          alt: "",
-          link: "/"
         }
       ]
     };

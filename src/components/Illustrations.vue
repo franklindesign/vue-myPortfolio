@@ -8,13 +8,15 @@
       >
         <router-link :to="`${illustration.link}`">
           <picture>
-            <source type="image/webp" :srcset="`${illustration.webp}`">
-            <img :src="`${illustration.image}`" :alt="`${illustration.alt}`">
+            <source type="image/webp" :srcset="`${illustration.webp}`" />
+            <img :src="`${illustration.image}`" :alt="`${illustration.alt}`" />
           </picture>
 
           <div class="hover">
             <p class="project project_title">{{ illustration.title }}</p>
-            <p class="project project_description">{{ illustration.description }}</p>
+            <p class="project project_description">
+              {{ illustration.description }}
+            </p>
           </div>
         </router-link>
       </div>

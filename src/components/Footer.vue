@@ -17,9 +17,10 @@
       </v-card-title>
 
       <v-card-actions class="blue justify-center pb-5">
-        <div>
+        <div style="text-align: center;">
           &copy;2019 —
           <strong>Design By Franklin</strong>
+          <p class="mt-2">Created with VueJS. Hosted on Netlify.</p>
         </div>
       </v-card-actions>
     </v-card>
