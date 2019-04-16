@@ -18,10 +18,10 @@
       </div>
       <div class="about-container">
         <p class="about">
-          Los Angeles based designer helping entrepreneurs, startups, and small
-          businesses elevate their branding through visual communication.
+          Franklin is a graphic designer and front-end web developer based in
+          Los Angeles, CA. He helps create scalable brands through design.
         </p>
-        <p class="subText">Available for work, email me at manghi@gmail.com</p>
+        <p class="subText">Hireable, email me at manghi@gmail.com.</p>
       </div>
     </v-container>
     <Projects></Projects>
@@ -39,12 +39,7 @@ export default {
   },
   data() {
     return {
-      franklin: [
-        "Graphic Designer",
-        "Product Designer",
-        "UI Developer",
-        "I am Franklin."
-      ]
+      franklin: ["Graphic Designer", "Product Designer", "Front-End Developer"]
     };
   }
 };
@@ -52,7 +47,7 @@ export default {
 
 <style scoped>
 .about {
-  font-size: 1.5em;
+  font-size: 2em;
 }
 .vueTyper {
   margin-top: 80px;
@@ -65,8 +60,8 @@ export default {
 
 @media screen and (min-width: 768px) {
   .about {
-    font-size: 1.5em;
-    width: 800px;
+    font-size: 2em;
+    width: 1000px;
   }
   .subText {
     font-size: 1em;
