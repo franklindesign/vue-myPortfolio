@@ -28,6 +28,14 @@ export default {
     return {
       projects: [
         {
+          title: "Disney Plus Clone",
+          description: "A project clone of Disney Plus App",
+          image: "../img/work/DisneyPlus2019/disneyplus2019_thumb.jpg",
+          webp: " ",
+          alt: "Disney Plus Clone",
+          link: "/demo/disneyplus"
+        },
+        {
           title: "Build Your Creativity",
           description: "Wendy's 2-in-1 Smart Links Kids Toys",
           image: "../img/work/BYC/byc_project.png",

@@ -54,6 +54,11 @@ export default new Router({
       name: "clientc",
       component: () => import("./projects/demo/ClientC.vue")
     },
+    {
+      path: "/demo/disneyplus",
+      name: "disneyplus",
+      component: () => import("./projects/demo/DisneyPlus.vue")
+    },
     // {
     //   path: "/blog",
     //   name: "blog",

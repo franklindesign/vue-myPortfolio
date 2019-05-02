@@ -1,7 +1,7 @@
 <template>
-  <v-footer dark height="auto" color="blue pb-4">
+  <v-footer dark height="auto" class="mt-3 mb-3">
     <v-card class="flex" flat>
-      <v-card-title class="blue justify-center">
+      <v-card-title class="justify-center" style="background-color: #131313">
         <div>
           <v-btn
             v-for="(item, i) in items"
@@ -16,11 +16,14 @@
         </div>
       </v-card-title>
 
-      <v-card-actions class="blue justify-center pb-5">
+      <v-card-actions
+        class="justify-center pb-5"
+        style="background-color: #131313"
+      >
         <div style="text-align: center;">
           &copy;2019 —
           <strong>Design By Franklin</strong>
-          <p class="mt-2">Created with VueJS. Hosted on Netlify.</p>
+          <p class="mt-2">Built with VueJS. Deployed to Netlify.</p>
         </div>
       </v-card-actions>
     </v-card>
