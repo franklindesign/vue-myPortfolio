@@ -1,15 +1,11 @@
 <template>
   <div>
     <div class="projects-container">
-      <div
-        class="mobile-item item-container"
-        v-for="project in projects"
-        :key="project.title"
-      >
+      <div class="mobile-item item-container" v-for="project in projects" :key="project.title">
         <router-link :to="`${project.link}`">
           <picture>
-            <source type="image/webp" :srcset="`${project.webp}`" />
-            <img :src="`${project.image}`" :alt="`${project.alt}`" />
+            <source type="image/webp" :srcset="`${project.webp}`">
+            <img :src="`${project.image}`" :alt="`${project.alt}`">
           </picture>
 
           <div class="hover">
