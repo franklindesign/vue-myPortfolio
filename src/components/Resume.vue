@@ -1,8 +1,9 @@
 <template>
   <div class="grid-container">
     <div class="grid-item-1 mb-2">
-      <strong
-        >Franklin Manghi <br />manghi@gmail.com <br />Graphic/Web Designer
+      <strong>
+        Franklin Manghi
+        <br />manghi@gmail.com <br />Graphic/Web Designer
       </strong>
     </div>
 
@@ -20,12 +21,15 @@
         </strong>
       </p>
       <p>
-        <i>Graphic / Web Designer / Email Producer</i>
+        <i>Graphic Designer</i>
       </p>
+      <p>February 2014 – Present</p>
       <p class="mb-4">
-        Conceptualized and designed email campaigns, updated restaurant menu,
-        developed website, drive local awareness and engagement through social
-        media and published monthly ad for local magazines.
+        Conceptualized and designed weekly email newsletters, updating
+        restaurant menu with a modern look, developed and maintained website and
+        social media channels, drive local awareness and engagement through
+        mail-in deliverables for local print magazines. Connected and created
+        accounts with popular food delivery services.
       </p>
       <hr />
     </div>
@@ -39,9 +43,14 @@
       <p>
         <i>Freelance Graphic Designer</i>
       </p>
+      <p>June 2016 – June 2016</p>
       <p class="mb-4">
-        Worked directly with an art director and senior designer on various
-        projects for Wendy's.
+        Partner closely with the creative department in terms of meeting
+        deadlines necessary for timely delivered of projects and creative
+        assets. Assisted in developing and maintaining the creative look and
+        feel for all rounds of concepts. Ensured stages of concepts adhere to
+        project requirements, objectives, and timelines upholding brand
+        standards across all projects.
       </p>
       <hr />
     </div>
@@ -51,32 +60,27 @@
         <strong>NU Whole Superfood</strong>
       </p>
       <p>
-        <i>Lead Graphic Designer</i>
+        <i>Lead Product Designer</i>
       </p>
+      <p>December 2013 – January 2015</p>
       <p class="mb-4">
-        Developed product label from prototype to final design, created
-        marketing materials for all media campaigns.
+        Partnering with CEO and project manager to create a product focused on
+        delivering healthier choice of nutritional products. I helped produced a
+        product label design and assisted in marketing campaigns with
+        deliverables in all web and print applications.
       </p>
       <hr />
     </div>
 
     <div class="grid-item-12">
-      <p class="column-spacing">
-        <strong>Feve's Manicure</strong>
-      </p>
-      <p>
-        <strong>Northridge Copy/Graphics Center</strong>
-      </p>
-      <p>
-        <strong>SOY Clothing Co.</strong>
-      </p>
       <p class="mt-1">
-        <i>Freelance Graphic Designer</i>
+        <strong>Freelance Graphic Designer at Franklin Design</strong>
       </p>
+      <p>October 2007 – Present</p>
       <p class="mb-4">
-        Worked with small business owners covering a broad range of deliverables
-        including logos, marketing collateral, posters, illustrations, magazine
-        ads, product labels and tshirt designs.
+        As a freelancer, I have worked alongside small business owners and
+        entrepreneurs in creating consumer products from concept to finish and
+        created additional deliverables for marketing.
       </p>
       <hr />
     </div>
@@ -176,9 +180,9 @@
       <strong>INTERESTS</strong>
     </div>
     <div class="cert column-spacing">
-      <span v-for="interest in interests" :key="interest">
-        {{ interest + ", " }}
-      </span>
+      <span v-for="interest in interests" :key="interest">{{
+        interest + ", "
+      }}</span>
     </div>
   </div>
 </template>
