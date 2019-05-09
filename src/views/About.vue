@@ -3,16 +3,18 @@
     <div>
       <h1>About</h1>
       <div class="me">
-        Los Angeles based graphic designer with 5+ years of experience,
-        focused on branding & identity design, product design, and front-end
-        web development.
+        Los Angeles based graphic designer with 5+ years of experience, focused
+        on branding & identity design, product design, and front-end web
+        development.
       </div>
       <div class="mt-4">
         <strong>Key Qualifications:</strong>
         <ul>
           <li>Bachelor's degree with 8+ years in design related field.</li>
           <li>Strong Knowledge of typography, layout, and identity design.</li>
-          <li>High attention to detail and adherence to defined brand guidelines.</li>
+          <li>
+            High attention to detail and adherence to defined brand guidelines.
+          </li>
           <li>
             Strong eye for color matching, experience working with Pantone and
             CMYK.
@@ -21,7 +23,9 @@
             Knowledge of print requirements needed for art file preparation and
             submission to vendors.
           </li>
-          <li>Working knowledge of the Adobe Creative Suite of applications.</li>
+          <li>
+            Working knowledge of the Adobe Creative Suite of applications.
+          </li>
           <li>
             Fluency in best practices for user interface, some experience with
             interaction design or user experience workflows.
@@ -50,7 +54,9 @@
           class="buttonStyle"
           :class="{ buttonStyle: !viewResume, closeStyle: viewResume }"
           @click="viewResume = !viewResume"
-        >View Resume</button>
+        >
+          View Resume
+        </button>
         <a href="../img/resume.pdf" target="_blank">
           <button class="ml-1 downloadBtn">Download Resume</button>
         </a>

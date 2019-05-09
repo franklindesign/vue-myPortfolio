@@ -20,7 +20,7 @@ export default {
   name: "App",
   metaInfo: {
     title:
-      "Franklin Manghi: [Graphic Designer + Product Designer + UI Developer]",
+      "Franklin Manghi | Los Angeles based graphic designer with front-end web development experience.",
     titleTemplate: "%s"
   },
   components: {

@@ -39,7 +39,7 @@ export default {
   },
   data() {
     return {
-      franklin: ["Graphic Designer", "Product Designer", "Front-End Developer"]
+      franklin: ["Graphic Designer", "Product Designer", "Front End Developer"]
     };
   }
 };
