@@ -4,33 +4,48 @@
     <div class="description">
       <div class="container">
         <div class="productContainer">
-          <v-img src="/img/work/NU/nu_whey_product.png" class="product"></v-img>
+          <v-img
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="/img/work/NU/nu_whey_product.png"
+            class="product"
+          ></v-img>
         </div>
       </div>
-      <h1 class="mb-3">{{ projectName }}</h1>
-      <p class="projectDetail">
-        Nu Whey Protein is a unique health nutrition company founded by Lenyn V.
-        Nunez, fitness coach, author and former Mr. California (Bodybuilding
-        Competition, 2011). Lenyn wanted to build a brand that supports his day
-        to day lifestyle and passion in health and nutrition. I was approached
-        to conceptualize a label packaging and direct his vision, a "Nu-Way" of
-        life that eventually consisted of a healthy and vegan-friendly whey
-        protein supplement. After numerous rounds of constant communication with
-        his team, we came up with a solution that visually communicate a
-        high-end quality product for casual gym-goers, vegans, and fit
-        individuals.
-      </p>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="mb-3">{{ projectName }}</h1>
+        <p class="projectDetail">
+          Nu Whey Protein is a unique health nutrition company founded by Lenyn
+          V. Nunez, fitness coach, author and former Mr. California
+          (Bodybuilding Competition, 2011). Lenyn wanted to build a brand that
+          supports his day to day lifestyle and passion in health and nutrition.
+          I was approached to conceptualize a label packaging and direct his
+          vision, a "Nu-Way" of life that eventually consisted of a healthy and
+          vegan-friendly whey protein supplement. After numerous rounds of
+          constant communication with his team, we came up with a solution that
+          visually communicate a high-end quality product for casual gym-goers,
+          vegans, and fit individuals.
+        </p>
 
-      <div class="services mt-5">
-        <h3>Services:</h3>
-        <ul>
-          <li v-for="service in services" :key="service">
-            {{ service.service }}
-          </li>
-        </ul>
+        <div class="services mt-5">
+          <h3>Services:</h3>
+          <ul>
+            <li v-for="service in services" :key="service">
+              {{ service.service }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <v-img
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
       v-for="image in images"
       :key="image"
       :src="`${image.src}`"

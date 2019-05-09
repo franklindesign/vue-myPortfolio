@@ -4,29 +4,43 @@
     <div class="description">
       <div class="container">
         <div class="productContainer">
-          <v-img src="/img/work/BYC/byc.png" class="product"></v-img>
+          <v-img
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="/img/work/BYC/byc.png"
+            class="product"
+          ></v-img>
         </div>
       </div>
-
-      <h1 class="mb-3">{{ projectName }}</h1>
-      <p class="projectDetail">
-        Wendy's Build Your Creativity Smart Links Kids Toy 2-in-1 series is
-        included with kids meal. As a freelancer at STROTTMAN, I have assisted
-        in the packaging design, editing assets, as well as finishing other
-        tasks needed to push closer to the final rounds of revision. With my
-        assist, the creative team were able to finish the project for Wendy's
-        just in time for final approval.
-      </p>
-      <div class="services mt-5">
-        <h3>Services:</h3>
-        <ul>
-          <li v-for="service in services" :key="service">
-            {{ service.service }}
-          </li>
-        </ul>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="mb-3">{{ projectName }}</h1>
+        <p class="projectDetail">
+          Wendy's Build Your Creativity Smart Links Kids Toy 2-in-1 series is
+          included with kids meal. As a freelancer at STROTTMAN, I have assisted
+          in the packaging design, editing assets, as well as finishing other
+          tasks needed to push closer to the final rounds of revision. With my
+          assist, the creative team were able to finish the project for Wendy's
+          just in time for final approval.
+        </p>
+        <div class="services mt-5">
+          <h3>Services:</h3>
+          <ul>
+            <li v-for="service in services" :key="service">
+              {{ service.service }}
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <v-img
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
       v-for="image in images"
       :key="image"
       :src="`${image.src}`"

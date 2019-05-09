@@ -5,37 +5,51 @@
       <div class="container">
         <div class="productContainer">
           <v-img
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             src="/img/work/HIBIKI/hibiki_ipad_iphone.png"
             class="product"
           ></v-img>
         </div>
       </div>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="mb-3">{{ projectName }}</h1>
+        <p class="projectDetail">
+          Originally contacted to redesign the restaurant menu for Hibiki Sushi
+          & Bar and as well as refreshing the company's identity, creating a
+          whole new and modern look. My services also included web design where
+          an online presence was needed for customers to view menu on their
+          phones. Mailchimp was also integrated into the website in order to
+          keep constant contact with customers.
+        </p>
 
-      <h1 class="mb-3">{{ projectName }}</h1>
-      <p class="projectDetail">
-        Originally contacted to redesign the restaurant menu for Hibiki Sushi &
-        Bar and as well as refreshing the company's identity, creating a whole
-        new and modern look. My services also included web design where an
-        online presence was needed for customers to view menu on their phones.
-        Mailchimp was also integrated into the website in order to keep constant
-        contact with customers.
-      </p>
-
-      <div class="services mt-5 mb-3">
-        <h3>Services:</h3>
-        <ul>
-          <li v-for="service in services" :key="service">
-            {{ service.service }}
-          </li>
-        </ul>
+        <div class="services mt-5 mb-3">
+          <h3>Services:</h3>
+          <ul>
+            <li v-for="service in services" :key="service">
+              {{ service.service }}
+            </li>
+          </ul>
+        </div>
+        <a href="http://www.hibikisushi.net" target="_blank">
+          <button class="buttonStyle">View Live Project</button>
+        </a>
       </div>
-      <a href="http://www.hibikisushi.net" target="_blank">
-        <button class="buttonStyle">View Live Project</button>
-      </a>
     </div>
     <picture v-for="image in images" :key="image.src">
       <source type="image/webp" :srcset="`${image.webp}`" />
-      <v-img :src="`${image.src}`" class="imageBG"></v-img>
+      <v-img
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+        :src="`${image.src}`"
+        class="imageBG"
+      ></v-img>
     </picture>
   </div>
 </template>

@@ -1,16 +1,32 @@
 <template>
   <v-container class="mt-5 topSpacing">
     <div>
-      <h1>About</h1>
-      <div class="me">
+      <h1
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        About
+      </h1>
+      <div
+        class="me mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1300"
+        data-aos-easing="ease-in-out"
+      >
         Los Angeles based graphic designer with 5+ years of experience, focused
         on branding & identity design, product design, and front-end web
         development.
       </div>
-      <div class="mt-4">
-        <strong>Key Qualifications:</strong>
-        <ul>
-          <li>Bachelor's degree with 8+ years in design related field.</li>
+      <div
+        class="mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <strong>Highlights:</strong>
+        <ul class="mt-2">
+          <li>Bachelor's degree with 5+ years in design related field.</li>
           <li>Strong Knowledge of typography, layout, and identity design.</li>
           <li>
             High attention to detail and adherence to defined brand guidelines.
@@ -49,7 +65,13 @@
         </ul>
       </div>
 
-      <div class="mt-3">
+      <div
+        class="mt-5"
+        data-aos="fade-up"
+        data-aos-duration="1700"
+        data-aos-delay="500"
+        data-aos-easing="ease-in-out"
+      >
         <button
           class="buttonStyle"
           :class="{ buttonStyle: !viewResume, closeStyle: viewResume }"

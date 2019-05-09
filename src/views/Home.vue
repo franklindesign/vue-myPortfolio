@@ -17,14 +17,31 @@
         ></vue-typer>
       </div>
       <div class="about-container">
-        <p class="about">
-          Franklin is a graphic designer and front-end web developer based in
-          Los Angeles, CA. He helps create scalable brands through design.
+        <p
+          class="about"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Los Angeles based graphic designer with 5+ years of experience,
+          focused on branding & identity design, product design, and front-end
+          web development.
         </p>
-        <p class="subText">Hireable, email me at manghi@gmail.com.</p>
+        <p
+          class="subText"
+          data-aos="fade-up"
+          data-aos-duration="1100"
+          data-aos-easing="ease-in-out"
+        >
+          Hireable, email me at manghi@gmail.com.
+        </p>
       </div>
     </v-container>
-    <Projects></Projects>
+    <Projects
+      data-aos="fade-up"
+      data-aos-duration="1250"
+      data-aos-easing="ease-in-out"
+    ></Projects>
   </div>
 </template>
 

@@ -5,30 +5,41 @@
       <div class="container">
         <div class="productContainer">
           <v-img
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             src="/img/work/DisneyPlus2019/disneyplus_header.png"
             class="product"
           ></v-img>
         </div>
       </div>
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+      >
+        <h1 class="mb-3">{{ projectName }}</h1>
 
-      <h1 class="mb-3">{{ projectName }}</h1>
+        <p>
+          After seeing Disney's Investor preview of the Disney Plus streaming
+          app. I was inspired to recreate the app with NextJS (React JavaSript
+          Framework) and TailwindCSS. Using a utility-first CSS made it a breeze
+          in styling the user interface as shown on the Disney preview.
+          Additionally added multiple pages and a movie page. Note: this is only
+          a demo, not a production-ready app.
+        </p>
+        <p>
+          <i>
+            Dependencies: Next, React, TailwindCSS, React-Slick, Slick-Carousel
+          </i>
+        </p>
+      </div>
 
-      <p class="projectDetail">
-        After seeing Disney's Investor preview of the Disney Plus streaming app.
-        I was inspired to recreate the app with NextJS (React JavaSript
-        Framework) and TailwindCSS. Using a utility-first CSS made it a breeze
-        in styling the user interface as shown on the Disney preview.
-        Additionally added multiple pages and a movie page. Note: this is only a
-        demo, not a production-ready app.
-      </p>
-      <p>
-        <i
-          >Dependencies: Next, React, TailwindCSS, React-Slick,
-          Slick-Carousel</i
-        >
-      </p>
       <div class="mt-5">
         <v-img
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1500"
           class="mt-2 mb-2"
           v-for="image in images"
           :src="`${image.src}`"
@@ -59,7 +70,7 @@
 export default {
   data() {
     return {
-      projectName: "Disney Plus App (Clone)",
+      projectName: "Disney+ (Clone App)",
       images: [
         {
           src: "/img/work/DisneyPlus2019/dp1.jpg"

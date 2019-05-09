@@ -5,18 +5,30 @@
       <div class="container">
         <div class="productContainer">
           <v-img
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             src="/img/work/Illustrations/AirMax/AirMax.png"
             class="product"
           ></v-img>
         </div>
       </div>
-      <h1 class="mb-3">{{ projectName }}</h1>
-      <p class="projectDetail">
-        Experimental illustration combining Nike's AIR MAX 90 OG "INFRARED" and
-        LEGO pieces.
-      </p>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
+        <h1 class="mb-3">{{ projectName }}</h1>
+        <p class="projectDetail">
+          Experimental illustration combining Nike's AIR MAX 90 OG "INFRARED"
+          and LEGO pieces.
+        </p>
+      </div>
     </div>
     <v-img
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
       v-for="image in images"
       :key="image"
       :src="`${image.src}`"

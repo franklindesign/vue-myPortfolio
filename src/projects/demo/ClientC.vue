@@ -5,54 +5,67 @@
       <div class="container">
         <div class="productContainer">
           <v-img
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1000"
             src="/img/work/ClientC/clientc_header.png"
             class="product"
           ></v-img>
         </div>
       </div>
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+      >
+        <h1 class="mb-3">{{ projectName }}</h1>
 
-      <h1 class="mb-3">{{ projectName }}</h1>
-
-      <p class="projectDetail">
-        ClientC is a small conceptual app for freelancers to manage their
-        clients. It features an authorization login/signup to access the client
-        dashboard, with given access a logged user is able to create, read,
-        update, and delete listed clients.
-      </p>
-      <p>
-        <i
-          >Web Technologies: ReactJS, Redux, Firebase/Firestore,
-          Boostrap/Reactstrap, Form Validation using RegEx</i
-        >
-      </p>
-
-      <div class="container pa-0 ma-0">
-        <iframe
-          src="https://player.vimeo.com/video/330283186"
-          width="800"
-          height="330"
-          frameborder="0"
-          allow="autoplay; fullscreen"
-          allowfullscreen
-        ></iframe>
+        <p class="projectDetail">
+          ClientC is a small conceptual app for freelancers to manage their
+          clients. It features an authorization login/signup to access the
+          client dashboard, with given access a logged user is able to create,
+          read, update, and delete listed clients.
+        </p>
+        <p>
+          <i>
+            Web Technologies: ReactJS, Redux, Firebase/Firestore,
+            Boostrap/Reactstrap, Form Validation using RegEx
+          </i>
+        </p>
       </div>
-      <div class="mt-3 mb-5">
-        <button>
-          <a
-            href="https://reactfreelancemanager.firebaseapp.com/"
-            target="_blank"
-          >
-            <button class="buttonStyle">View Live Demo</button>
-          </a>
-        </button>
-        <button>
-          <a
-            href="https://reactfreelancemanager.firebaseapp.com/"
-            target="_blank"
-          >
-            <button class="buttonStyle">View Repository on Github</button>
-          </a>
-        </button>
+      <div
+        data-aos="fade-up"
+        data-aos-easing="ease-in-out"
+        data-aos-duration="1500"
+      >
+        <div class="container pa-0 ma-0">
+          <iframe
+            src="https://player.vimeo.com/video/330283186"
+            width="800"
+            height="330"
+            frameborder="0"
+            allow="autoplay; fullscreen"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="mt-3 mb-5">
+          <button>
+            <a
+              href="https://reactfreelancemanager.firebaseapp.com/"
+              target="_blank"
+            >
+              <button class="buttonStyle">View Live Demo</button>
+            </a>
+          </button>
+          <button>
+            <a
+              href="https://reactfreelancemanager.firebaseapp.com/"
+              target="_blank"
+            >
+              <button class="buttonStyle">View Repository on Github</button>
+            </a>
+          </button>
+        </div>
       </div>
     </div>
   </div>
