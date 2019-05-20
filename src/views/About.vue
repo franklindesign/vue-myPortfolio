@@ -14,9 +14,17 @@
         data-aos-duration="1300"
         data-aos-easing="ease-in-out"
       >
-        Los Angeles based graphic designer with 5+ years of experience, focused
-        on branding & identity design, product design, and front-end web
-        development.
+        <p>
+          I am a graphic designer based in Los Angeles and studied graphic
+          design at California State University, Northridge. I'm also a
+          self-taught front end web developer, constantly learning something new
+          with web technologies. Since 2008, I have done freelance work for
+          small businesses and entrepreneurs. My work ranges from marketing
+          deliverables, print collaterals, brand identity, packaging, web design
+          and development as well as UI/UX.
+        </p>
+
+        <p>You can reach me through email: manghi@gmail.com</p>
       </div>
       <div
         class="mt-5"
@@ -24,7 +32,7 @@
         data-aos-duration="1500"
         data-aos-easing="ease-in-out"
       >
-        <strong>Highlights:</strong>
+        <strong>Here some of my highlights:</strong>
         <ul class="mt-2">
           <li>Bachelor's degree with 5+ years in design related field.</li>
           <li>Strong Knowledge of typography, layout, and identity design.</li>
@@ -48,8 +56,9 @@
           </li>
           <li>
             Experience working with marketing automation platforms such as
-            Mailchimp, and CMS systems such as Wordpress.
+            Mailchimp, and Content Management System such as Wordpress.
           </li>
+
           <li>
             Familiarity with the most widely used web analytics service, Google
             Analytics.

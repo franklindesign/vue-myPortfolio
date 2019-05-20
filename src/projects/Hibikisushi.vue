@@ -19,8 +19,8 @@
         data-aos-easing="ease-in-out"
       >
         <h1 class="mb-5">{{ projectName }}</h1>
-        <div class="projectDetail">
-          <h2 class="mb-3">Context</h2>
+        <div>
+          <h2>Context</h2>
           <p>
             Hibiki Sushi & Bar is local mom & pop Asian fusion restaurant
             featuring All You Can Eat with an extensive menu of over 100 items.
@@ -38,16 +38,16 @@
           </p>
         </div>
         <div class="mt-5">
-          <h2 class="mb-3">The Objective</h2>
-          <p class="projectDetail">
+          <h2>The Objective</h2>
+          <p>
             The purpose behind the redesign of Hibiki's identity was to give it
             a modern, clean look and as well as provide visibility and or online
             presence.
           </p>
         </div>
         <div class="mt-5">
-          <h2 class="mb-3">The Strategy</h2>
-          <p class="projectDetail">
+          <h2>The Strategy</h2>
+          <p>
             To focus on creating a new look, I have redesigned the restaurant
             menu with even adding more items than previous years. Increased
             online presence by developing a website that would have an online
@@ -66,7 +66,7 @@
     >
       <div class="mt-5 description">
         <h2>Logo</h2>
-        <p class="mt-3">
+        <p>
           The Hibiki Sushi & Bar logo features two original colors, a variant of
           a darker red and blue background for the subtitle. The restaurant
           originally had an outdoor neon sign with the same italicized

@@ -36,12 +36,28 @@ export default {
           link: "/demo/disneyplus"
         },
         {
+          title: "ClientC (Demo)",
+          description: "Client Managing App",
+          image: "../img/work/ClientC/clientc_thumb.jpg",
+          webp: "",
+          alt: "ClienC (Demo)",
+          link: "/demo/clientc"
+        },
+        {
           title: "Build Your Creativity",
           description: "Wendy's 2-in-1 Smart Links Kids Toys",
           image: "../img/work/BYC/byc_project.png",
           webp: "../img/work/BYC/byc_project.webp",
           alt: "Build Your Creativity project with STROTTMAN",
           link: "/work/buildyourcreativity"
+        },
+        {
+          title: "NU Superfood",
+          description: "Nu Whey Protein",
+          image: "../img/work/NU/nu_project.png",
+          webp: "../img/work/NU/nu_project.webp",
+          alt: "Package Design for NU",
+          link: "/work/nu"
         },
         {
           title: "Hibiki Sushi",
@@ -59,22 +75,7 @@ export default {
           alt: "Project Tangerines",
           link: "/work/tangerines"
         },
-        {
-          title: "NU Superfood",
-          description: "Nu Whey Protein",
-          image: "../img/work/NU/nu_project.png",
-          webp: "../img/work/NU/nu_project.webp",
-          alt: "Package Design for NU",
-          link: "/work/nu"
-        },
-        {
-          title: "ClientC (Demo)",
-          description: "Client Managing App",
-          image: "../img/work/ClientC/clientc_thumb.jpg",
-          webp: "",
-          alt: "ClienC (Demo)",
-          link: "/demo/clientc"
-        },
+
         {
           title: "Illustrations",
           description: "Various Experimental Illustrations",
