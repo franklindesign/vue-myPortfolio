@@ -45,6 +45,11 @@ export default new Router({
       component: () => import("./projects/Nu.vue")
     },
     {
+      path: "/work/mjml",
+      name: "mjml",
+      component: () => import("./projects/MJML.vue")
+    },
+    {
       path: "/work/tangerines",
       name: "tangerines",
       component: () => import("./projects/Tangerines.vue")

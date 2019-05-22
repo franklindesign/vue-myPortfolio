@@ -28,21 +28,23 @@ export default {
     return {
       projects: [
         {
-          title: "Disney Plus Clone",
-          description: "A project clone of Disney Plus App",
+          title: "Disney+ with React/NextJS",
+          description:
+            "A Disney+ App on desktop, built with React/Next JS Framework",
           image: "../img/work/DisneyPlus2019/disneyplus2019_thumb.jpg",
           webp: " ",
           alt: "Disney Plus Clone",
           link: "/demo/disneyplus"
         },
         {
-          title: "ClientC (Demo)",
-          description: "Client Managing App",
-          image: "../img/work/ClientC/clientc_thumb.jpg",
-          webp: "",
-          alt: "ClienC (Demo)",
-          link: "/demo/clientc"
+          title: "MJML Email Templates",
+          description: "Responsive email templates built with MJML",
+          image: "../img/work/MJML/MJML.jpg",
+          webp: " ",
+          alt: "Responsive email templates built with MJML",
+          link: "/work/mjml"
         },
+
         {
           title: "Build Your Creativity",
           description: "Wendy's 2-in-1 Smart Links Kids Toys",
@@ -74,6 +76,14 @@ export default {
           webp: "../img/work/OCFHC/tangerines_project.webp",
           alt: "Project Tangerines",
           link: "/work/tangerines"
+        },
+        {
+          title: "ClientC (Demo)",
+          description: "Client Managing App",
+          image: "../img/work/ClientC/clientc_thumb.jpg",
+          webp: "",
+          alt: "ClienC (Demo)",
+          link: "/demo/clientc"
         },
 
         {
