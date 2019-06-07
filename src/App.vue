@@ -4,10 +4,10 @@
       <div id="nav">
         <ToolBar></ToolBar>
       </div>
-      <router-view />
+      <router-view/>
     </v-content>
-    <Footer />
-    <BottomNav />
+    <Footer/>
+    <BottomNav/>
   </v-app>
 </template>
 
@@ -20,7 +20,7 @@ export default {
   name: "App",
   metaInfo: {
     title:
-      "Franklin Manghi | Los Angeles based graphic designer with front-end web development experience.",
+      "Franklin Manghi | Los Angeles based web/graphic designer && front end web developer",
     titleTemplate: "%s"
   },
   components: {
