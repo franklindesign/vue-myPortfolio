@@ -43,7 +43,7 @@
       </div>
     </div>
     <div class="container">
-      <video controls wi dth="1200" autoplay loop>
+      <video controls autoplay loop>
         <source src="/img/work/MJML/ez_mjml.webm" type="video/webm" />
         <source src="/img/work/MJML/ez_mjml.mp4" type="video/mp4" />
         Sorry, your browser doesn't support embedded videos.
