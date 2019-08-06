@@ -13,7 +13,11 @@
           ></v-img>
         </div>
       </div>
-      <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1500"
+        data-aos-easing="ease-in-out"
+      >
         <h1 class="mb-5">{{ projectName }}</h1>
         <div>
           <h2>Context</h2>
@@ -88,9 +92,18 @@
           four-column flex grid for each page.
         </p>
       </div>
-      <v-img v-for="image in images" :key="image.title" :src="`${image.src}`" class="imageBG"></v-img>
+      <v-img
+        v-for="image in images"
+        :key="image.title"
+        :src="`${image.src}`"
+        class="imageBG"
+      ></v-img>
     </div>
-    <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+    >
       <div class="description">
         <h2>Email Newsletters</h2>
         <p>
@@ -105,9 +118,17 @@
         </p>
       </div>
 
-      <v-img v-for="newsletter in newsletters" :src="`${newsletter.src}`" :key="newsletter.title"></v-img>
+      <v-img
+        v-for="newsletter in newsletters"
+        :src="`${newsletter.src}`"
+        :key="newsletter.title"
+      ></v-img>
     </div>
-    <div data-aos="fade-up" data-aos-duration="1500" data-aos-easing="ease-in-out">
+    <div
+      data-aos="fade-up"
+      data-aos-duration="1500"
+      data-aos-easing="ease-in-out"
+    >
       <div class="description">
         <h2>Website Design & Development</h2>
         <p>
@@ -119,7 +140,12 @@
           features a reactive and dynamic routing, page refreshes are
           non-existant allowing better user experiences.
         </p>
-        <v-img class="mb-5" v-for="device in devices" :key="device.id" :src="`${device.src}`"></v-img>
+        <v-img
+          class="mb-5"
+          v-for="device in devices"
+          :key="device.id"
+          :src="`${device.src}`"
+        ></v-img>
         <div class="container">
           <a href="http://hibikisushi.netlify.com" target="_blank">
             <button class="buttonStyle">View Live Website</button>

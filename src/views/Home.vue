@@ -22,16 +22,25 @@
           data-aos="fade-up"
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
-        >Los Angeles based graphic designer focused on branding & identity design, product design, and front-end web development.</p>
+        >
+          Los Angeles based graphic designer focused on branding & identity
+          design, product design, and front-end web development.
+        </p>
         <p
           class="subText"
           data-aos="fade-up"
           data-aos-duration="1100"
           data-aos-easing="ease-in-out"
-        >Hireable, email me at manghi@gmail.com.</p>
+        >
+          Hireable, email me at manghi@gmail.com.
+        </p>
       </div>
     </v-container>
-    <Projects data-aos="fade-up" data-aos-duration="1250" data-aos-easing="ease-in-out"></Projects>
+    <Projects
+      data-aos="fade-up"
+      data-aos-duration="1250"
+      data-aos-easing="ease-in-out"
+    ></Projects>
   </div>
 </template>
 

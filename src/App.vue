@@ -4,10 +4,10 @@
       <div id="nav">
         <ToolBar></ToolBar>
       </div>
-      <router-view/>
+      <router-view />
     </v-content>
-    <Footer/>
-    <BottomNav/>
+    <Footer />
+    <BottomNav />
   </v-app>
 </template>
 
