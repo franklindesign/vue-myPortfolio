@@ -29,9 +29,10 @@
           a demo, not a production-ready app.
         </p>
         <p>
-          <i>
-            Dependencies: Next, React, TailwindCSS, React-Slick, Slick-Carousel
-          </i>
+          <i
+            >Dependencies: Next, React, TailwindCSS, React-Slick,
+            Slick-Carousel</i
+          >
         </p>
       </div>
 
@@ -45,6 +46,28 @@
           :src="`${image.src}`"
           :key="image"
         ></v-img>
+      </div>
+
+      <div class="mt-5">
+        <div
+          data-aos="fade-up"
+          data-aos-easing="ease-in-out"
+          data-aos-duration="1500"
+        >
+          <h1>Wireframes</h1>
+        </div>
+
+        <div class="mt-5">
+          <v-img
+            data-aos="fade-up"
+            data-aos-easing="ease-in-out"
+            data-aos-duration="1500"
+            class="mt-2 mb-2"
+            v-for="wireframe in wireframes"
+            :src="`${wireframe.src}`"
+            :key="wireframe"
+          ></v-img>
+        </div>
       </div>
 
       <div class="mt-3 mb-5">
@@ -101,6 +124,14 @@ export default {
         },
         {
           src: "/img/work/DisneyPlus2019/dp0.2.jpg"
+        }
+      ],
+      wireframes: [
+        {
+          src: "/img/work/DisneyPlus2019/disney_plus_wireframes_1.jpg"
+        },
+        {
+          src: "/img/work/DisneyPlus2019/disney_plus_mobile_wireframes_1.jpg"
         }
       ]
     };

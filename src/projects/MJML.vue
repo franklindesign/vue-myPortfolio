@@ -73,12 +73,13 @@
       </div>
     </div>
     <div class="container">
-      <v-img
-        v-for="image in images"
-        :key="image"
-        :src="`${image.src}`"
-        class="imageBG"
-      ></v-img>
+      <v-img src="/img/work/MJML/email-n1.jpg" class="imageBG"></v-img>
+    </div>
+    <div class="container">
+      <v-img src="/img/work/MJML/email-n2.jpg" class="imageBG"></v-img>
+    </div>
+    <div class="container">
+      <v-img src="/img/work/MJML/email-n3.jpg" class="imageBG"></v-img>
     </div>
     <div class="container">
       <a
@@ -97,7 +98,11 @@ export default {
     return {
       projectName: "MJML Responsive Email Templates",
 
-      images: [{ src: "/img/work/MJML/mjml_temps.jpg" }]
+      images: [
+        { src: "/img/work/MJML/email-n1.jpg" },
+        { src: "/img/work/MJML/email-n2.jpg" },
+        { src: "/img/work/MJML/email-n3.jpg" }
+      ]
     };
   }
 };
