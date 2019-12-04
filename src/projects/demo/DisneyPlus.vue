@@ -29,15 +29,15 @@
           a demo, not a production-ready app.
         </p>
         <p>
-          <i
-            >Dependencies: Next, React, TailwindCSS, React-Slick,
-            Slick-Carousel</i
-          >
+          <i>
+            Dependencies: Next, React, TailwindCSS, React-Slick, Slick-Carousel
+          </i>
         </p>
       </div>
 
       <div class="mt-5">
         <v-img
+          loading="lazy"
           data-aos="fade-up"
           data-aos-easing="ease-in-out"
           data-aos-duration="1500"
@@ -59,6 +59,7 @@
 
         <div class="mt-5">
           <v-img
+            loading="lazy"
             data-aos="fade-up"
             data-aos-easing="ease-in-out"
             data-aos-duration="1500"

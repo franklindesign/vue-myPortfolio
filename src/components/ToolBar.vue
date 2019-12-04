@@ -1,8 +1,8 @@
 <template>
   <div>
-    <v-toolbar dark flat class="toolbar-transparent" fixed height="70">
-      <v-toolbar-title class="white--text">
-        <router-link to="/" class="title">
+    <v-toolbar dark text class="toolbar-transparent" fixed height="70">
+      <v-toolbar-title>
+        <router-link to="/" class="title white--text">
           Franklin Design
           <span class="caretColor blink">|</span>
         </router-link>
@@ -10,7 +10,7 @@
       <v-spacer></v-spacer>
       <v-toolbar-items class="hidden-sm-and-down">
         <v-btn
-          flat
+          text
           v-for="item in items"
           :key="item.title"
           :to="`${item.link}`"
@@ -19,52 +19,13 @@
           <p class="ma-2">{{ item.title }}</p>
         </v-btn>
       </v-toolbar-items>
-      <!-- <div class="hidden-sm-and-down">
-        <v-btn icon @click="drawer = !drawer">
-          <v-icon>menu</v-icon>
-        </v-btn>
-      </div>-->
     </v-toolbar>
-    <!--     
-    <v-navigation-drawer
-      v-model="drawer"
-      right
-      dark
-      app
-      temporary
-      class="grey darken-4 hidden-sm-and-down"
-    >
-      <v-list class="pa-1">
-        <v-list-tile avatar tag="div">
-          <v-list-tile-avatar>
-            <img src="https://avatars1.githubusercontent.com/u/6743753?s=100">
-          </v-list-tile-avatar>
-          <v-list-tile-content>
-            <v-list-tile-title>Franklin Manghi</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-
-      <v-list>
-        <v-divider light></v-divider>
-
-        <v-list-tile ripple v-for="item in items" :key="item.title" :to="`${item.link}`">
-          <v-list-tile-action>
-            <v-icon>{{ item.icon }}</v-icon>
-          </v-list-tile-action>
-
-          <v-list-tile-content>
-            <v-list-tile-title>{{ item.title }}</v-list-tile-title>
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
-    </v-navigation-drawer>-->
   </div>
 </template>
 <style scoped>
 .caretColor {
   color: rgb(155, 155, 155);
-  margin-left: -14px;
+  margin-left: -3px;
 }
 .blink {
   animation: blink-animation 950ms steps(4, start) infinite;

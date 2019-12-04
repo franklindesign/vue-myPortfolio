@@ -39,10 +39,9 @@ a:hover {
 
 .vue-typer .custom.char {
   color: #9cdbf9;
-  background-color: #285076;
 }
 .vue-typer .custom.char.selected {
-  background-color: #6a6a6a;
+  background-color: #f44a4a;
 }
 
 .vue-typer .custom.caret {
@@ -59,11 +58,10 @@ a:hover {
   }
   .vue-typer {
     font-family: "fira code", monospace;
-    font-size: 4em;
+    font-size: 3em;
   }
   .vue-typer .custom.char {
     color: #9cdbf9;
-    background-color: #285076;
   }
   .vue-typer .custom.char.selected {
     background-color: #6a6a6a;

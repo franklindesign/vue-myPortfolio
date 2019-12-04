@@ -4,8 +4,8 @@
       <div class="vueTyper">
         <vue-typer
           :text="franklin"
-          :repeat="infinity"
           :shuffle="false"
+          :repeat="false"
           initial-action="typing"
           :pre-type-delay="50"
           :type-delay="50"
@@ -23,8 +23,7 @@
           data-aos-duration="1000"
           data-aos-easing="ease-in-out"
         >
-          Los Angeles based graphic designer focused on branding & identity
-          design, product design, and front-end web development.
+          I'm designer/developer in Los Angeles, CA.
         </p>
         <p
           class="subText"
@@ -46,7 +45,6 @@
 
 <script>
 // @ is an alias to /src
-
 import Projects from "@/components/Projects.vue";
 export default {
   name: "Home",
@@ -55,12 +53,7 @@ export default {
   },
   data() {
     return {
-      franklin: [
-        "Hello, World!",
-        "I'm a Graphic Designer",
-        "Product Designer",
-        "Front End Developer"
-      ]
+      franklin: ["Hello, World!", "My name is Franklin!"]
     };
   }
 };

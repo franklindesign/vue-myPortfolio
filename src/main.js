@@ -5,14 +5,14 @@ import ToolBar from "./components/ToolBar.vue";
 import BottomNav from "./components/BottomNav.vue";
 import router from "./router";
 import "./registerServiceWorker";
-import Vuetify from "vuetify";
-import "vuetify/dist/vuetify.min.css";
+
 import "./app.css";
 import VueTyperPlugin from "vue-typer";
 import AOS from "aos";
 import "aos/dist/aos.css";
+// import vuetify from "@/plugins/vuetify";
+import vuetify from "./plugins/vuetify";
 
-Vue.use(Vuetify);
 Vue.use(VueTyperPlugin);
 
 Vue.component("toolbar", ToolBar);
@@ -25,5 +25,6 @@ new Vue({
     AOS.init({ disable: "phone" });
   },
   router,
+  vuetify,
   render: h => h(App)
 }).$mount("#app");

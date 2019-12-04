@@ -1,5 +1,5 @@
 <template>
-  <v-footer dark height="auto" class="mt-3 mb-3">
+  <v-footer dark height="auto" padless class="mb-5">
     <v-card class="flex" flat>
       <v-card-title class="justify-center" style="background-color: #131313">
         <div>
@@ -16,10 +16,7 @@
         </div>
       </v-card-title>
 
-      <v-card-actions
-        class="justify-center pb-5"
-        style="background-color: #131313"
-      >
+      <v-card-actions class="justify-center pb-5" style="background-color: #131313">
         <div style="text-align: center;">
           &copy;2019 —
           <strong>Design By Franklin</strong>

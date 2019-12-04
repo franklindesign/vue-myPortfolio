@@ -1,13 +1,13 @@
 <template>
   <v-container class="mt-5 topSpacing">
     <div>
-      <h1
+      <img
         data-aos="fade-up"
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
-      >
-        About
-      </h1>
+        src="../assets/avatar.png"
+      />
+
       <div
         class="me mt-5"
         data-aos="fade-up"

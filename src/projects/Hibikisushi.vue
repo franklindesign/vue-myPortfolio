@@ -96,6 +96,7 @@
         v-for="image in images"
         :key="image.title"
         :src="`${image.src}`"
+        loading="lazy"
         class="imageBG"
       ></v-img>
     </div>

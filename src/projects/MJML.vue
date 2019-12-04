@@ -5,6 +5,7 @@
       <div class="container">
         <div class="productContainer">
           <v-img
+            loading="lazy"
             data-aos="fade-up"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
@@ -73,13 +74,25 @@
       </div>
     </div>
     <div class="container">
-      <v-img src="/img/work/MJML/email-n1.jpg" class="imageBG"></v-img>
+      <v-img
+        src="/img/work/MJML/email-n1.jpg"
+        loading="lazy"
+        class="imageBG"
+      ></v-img>
     </div>
     <div class="container">
-      <v-img src="/img/work/MJML/email-n2.jpg" class="imageBG"></v-img>
+      <v-img
+        src="/img/work/MJML/email-n2.jpg"
+        loading="lazy"
+        class="imageBG"
+      ></v-img>
     </div>
     <div class="container">
-      <v-img src="/img/work/MJML/email-n3.jpg" class="imageBG"></v-img>
+      <v-img
+        src="/img/work/MJML/email-n3.jpg"
+        loading="lazy"
+        class="imageBG"
+      ></v-img>
     </div>
     <div class="container">
       <a
